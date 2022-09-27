@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private void rButtons7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

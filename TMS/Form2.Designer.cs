@@ -30,6 +30,17 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.rButtons11 = new Tool_Inventory_System.RButtons();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rButtons10 = new Tool_Inventory_System.RButtons();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ToolIDIn = new TMS.Contols.TBox();
+            this.rButtons9 = new Tool_Inventory_System.RButtons();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.toolIDOut = new TMS.Contols.TBox();
+            this.rButtons8 = new Tool_Inventory_System.RButtons();
+            this.rButtons7 = new Tool_Inventory_System.RButtons();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,6 +90,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -114,6 +127,11 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.DarkGray;
+            this.tabPage1.Controls.Add(this.rButtons11);
+            this.tabPage1.Controls.Add(this.groupBox7);
+            this.tabPage1.Controls.Add(this.groupBox6);
+            this.tabPage1.Controls.Add(this.rButtons7);
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
@@ -121,7 +139,192 @@
             this.tabPage1.Size = new System.Drawing.Size(1127, 722);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Check In/Out";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // rButtons11
+            // 
+            this.rButtons11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons11.BackColor = System.Drawing.Color.Green;
+            this.rButtons11.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons11.BorderRadius = 40;
+            this.rButtons11.BorderSize = 2;
+            this.rButtons11.FlatAppearance.BorderSize = 0;
+            this.rButtons11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons11.ForeColor = System.Drawing.Color.White;
+            this.rButtons11.Location = new System.Drawing.Point(358, 644);
+            this.rButtons11.Name = "rButtons11";
+            this.rButtons11.Size = new System.Drawing.Size(224, 54);
+            this.rButtons11.TabIndex = 15;
+            this.rButtons11.Text = "Check Out";
+            this.rButtons11.TextColor = System.Drawing.Color.White;
+            this.rButtons11.UseVisualStyleBackColor = false;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.rButtons10);
+            this.groupBox7.Controls.Add(this.label13);
+            this.groupBox7.Controls.Add(this.ToolIDIn);
+            this.groupBox7.Controls.Add(this.rButtons9);
+            this.groupBox7.Location = new System.Drawing.Point(673, 181);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(432, 292);
+            this.groupBox7.TabIndex = 17;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Check In";
+            // 
+            // rButtons10
+            // 
+            this.rButtons10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons10.BackColor = System.Drawing.Color.Green;
+            this.rButtons10.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons10.BorderRadius = 40;
+            this.rButtons10.BorderSize = 2;
+            this.rButtons10.FlatAppearance.BorderSize = 0;
+            this.rButtons10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons10.ForeColor = System.Drawing.Color.White;
+            this.rButtons10.Location = new System.Drawing.Point(41, 180);
+            this.rButtons10.Name = "rButtons10";
+            this.rButtons10.Size = new System.Drawing.Size(357, 57);
+            this.rButtons10.TabIndex = 15;
+            this.rButtons10.Text = "Check Out";
+            this.rButtons10.TextColor = System.Drawing.Color.White;
+            this.rButtons10.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(16, 112);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(82, 25);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Tool ID";
+            // 
+            // ToolIDIn
+            // 
+            this.ToolIDIn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ToolIDIn.BackColor = System.Drawing.Color.DarkGray;
+            this.ToolIDIn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ToolIDIn.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ToolIDIn.BorderSize = 5;
+            this.ToolIDIn.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ToolIDIn.ForeColor = System.Drawing.Color.DimGray;
+            this.ToolIDIn.Location = new System.Drawing.Point(16, 68);
+            this.ToolIDIn.Margin = new System.Windows.Forms.Padding(4);
+            this.ToolIDIn.Multiline = false;
+            this.ToolIDIn.Name = "ToolIDIn";
+            this.ToolIDIn.Padding = new System.Windows.Forms.Padding(7);
+            this.ToolIDIn.PasswordChar = false;
+            this.ToolIDIn.Size = new System.Drawing.Size(409, 40);
+            this.ToolIDIn.TabIndex = 7;
+            this.ToolIDIn.UnderlinedStyle = true;
+            // 
+            // rButtons9
+            // 
+            this.rButtons9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons9.BackColor = System.Drawing.Color.Green;
+            this.rButtons9.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons9.BorderRadius = 30;
+            this.rButtons9.BorderSize = 2;
+            this.rButtons9.FlatAppearance.BorderSize = 0;
+            this.rButtons9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons9.ForeColor = System.Drawing.Color.White;
+            this.rButtons9.Location = new System.Drawing.Point(27, 298);
+            this.rButtons9.Name = "rButtons9";
+            this.rButtons9.Size = new System.Drawing.Size(537, 57);
+            this.rButtons9.TabIndex = 14;
+            this.rButtons9.Text = "Check Out";
+            this.rButtons9.TextColor = System.Drawing.Color.White;
+            this.rButtons9.UseVisualStyleBackColor = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label14);
+            this.groupBox6.Controls.Add(this.toolIDOut);
+            this.groupBox6.Controls.Add(this.rButtons8);
+            this.groupBox6.Location = new System.Drawing.Point(24, 181);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(432, 292);
+            this.groupBox6.TabIndex = 16;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Check Out";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(16, 112);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(82, 25);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Tool ID";
+            // 
+            // toolIDOut
+            // 
+            this.toolIDOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.toolIDOut.BackColor = System.Drawing.Color.DarkGray;
+            this.toolIDOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.toolIDOut.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolIDOut.BorderSize = 5;
+            this.toolIDOut.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.toolIDOut.ForeColor = System.Drawing.Color.DimGray;
+            this.toolIDOut.Location = new System.Drawing.Point(16, 68);
+            this.toolIDOut.Margin = new System.Windows.Forms.Padding(4);
+            this.toolIDOut.Multiline = false;
+            this.toolIDOut.Name = "toolIDOut";
+            this.toolIDOut.Padding = new System.Windows.Forms.Padding(7);
+            this.toolIDOut.PasswordChar = false;
+            this.toolIDOut.Size = new System.Drawing.Size(409, 40);
+            this.toolIDOut.TabIndex = 7;
+            this.toolIDOut.UnderlinedStyle = true;
+            // 
+            // rButtons8
+            // 
+            this.rButtons8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons8.BackColor = System.Drawing.Color.Green;
+            this.rButtons8.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons8.BorderRadius = 40;
+            this.rButtons8.BorderSize = 2;
+            this.rButtons8.FlatAppearance.BorderSize = 0;
+            this.rButtons8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons8.ForeColor = System.Drawing.Color.White;
+            this.rButtons8.Location = new System.Drawing.Point(34, 180);
+            this.rButtons8.Name = "rButtons8";
+            this.rButtons8.Size = new System.Drawing.Size(357, 57);
+            this.rButtons8.TabIndex = 14;
+            this.rButtons8.Text = "Check Out";
+            this.rButtons8.TextColor = System.Drawing.Color.White;
+            this.rButtons8.UseVisualStyleBackColor = false;
+            // 
+            // rButtons7
+            // 
+            this.rButtons7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons7.BorderColor = System.Drawing.Color.Maroon;
+            this.rButtons7.BorderRadius = 40;
+            this.rButtons7.BorderSize = 2;
+            this.rButtons7.FlatAppearance.BorderSize = 0;
+            this.rButtons7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons7.ForeColor = System.Drawing.Color.White;
+            this.rButtons7.Location = new System.Drawing.Point(588, 644);
+            this.rButtons7.Name = "rButtons7";
+            this.rButtons7.Size = new System.Drawing.Size(224, 54);
+            this.rButtons7.TabIndex = 15;
+            this.rButtons7.Text = "Cancel";
+            this.rButtons7.TextColor = System.Drawing.Color.White;
+            this.rButtons7.UseVisualStyleBackColor = false;
+            this.rButtons7.Click += new System.EventHandler(this.rButtons7_Click);
             // 
             // panel4
             // 
@@ -812,6 +1015,10 @@
             this.Text = "Form2";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -891,5 +1098,16 @@
         private Tool_Inventory_System.RButtons rButtons6;
         private Label label12;
         private Contols.TBox tBox6;
+        private GroupBox groupBox6;
+        private Tool_Inventory_System.RButtons rButtons7;
+        private Tool_Inventory_System.RButtons rButtons8;
+        private GroupBox groupBox7;
+        private Label label13;
+        private Contols.TBox ToolIDIn;
+        private Tool_Inventory_System.RButtons rButtons9;
+        private Label label14;
+        private Contols.TBox toolIDOut;
+        private Tool_Inventory_System.RButtons rButtons11;
+        private Tool_Inventory_System.RButtons rButtons10;
     }
 }
