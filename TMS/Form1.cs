@@ -17,12 +17,20 @@ namespace TMS
             InitializeComponent();
         }
 
+        //Hide or Show Password.
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)
-                PasswordTB.PasswordChar = false;
+                empPinTB.PasswordChar = false;
             else
-                PasswordTB.PasswordChar = true;
+                empPinTB.PasswordChar = true;
+        }
+
+        //Clear EmpID and Password Form
+        private void label4_Click(object sender, EventArgs e)
+        {
+            empIdTB.Text = "";
+            empPinTB.Text = "";
         }
     }
 }

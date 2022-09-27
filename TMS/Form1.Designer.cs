@@ -35,8 +35,8 @@
             this.rButtons1 = new Tool_Inventory_System.RButtons();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.PasswordTB = new TMS.Contols.TBox();
-            this.tBox1 = new TMS.Contols.TBox();
+            this.empPinTB = new TMS.Contols.TBox();
+            this.empIdTB = new TMS.Contols.TBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,8 +50,8 @@
             this.panel1.Controls.Add(this.rButtons1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.PasswordTB);
-            this.panel1.Controls.Add(this.tBox1);
+            this.panel1.Controls.Add(this.empPinTB);
+            this.panel1.Controls.Add(this.empIdTB);
             this.panel1.Location = new System.Drawing.Point(224, 141);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 447);
@@ -77,6 +77,7 @@
             this.label4.Size = new System.Drawing.Size(55, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "Clear";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // checkBox1
             // 
@@ -129,41 +130,41 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Employee ID";
             // 
-            // PasswordTB
+            // empPinTB
             // 
-            this.PasswordTB.BackColor = System.Drawing.SystemColors.Window;
-            this.PasswordTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.PasswordTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PasswordTB.BorderSize = 5;
-            this.PasswordTB.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordTB.ForeColor = System.Drawing.Color.DimGray;
-            this.PasswordTB.Location = new System.Drawing.Point(33, 232);
-            this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PasswordTB.Multiline = false;
-            this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Padding = new System.Windows.Forms.Padding(7);
-            this.PasswordTB.PasswordChar = true;
-            this.PasswordTB.Size = new System.Drawing.Size(323, 40);
-            this.PasswordTB.TabIndex = 3;
-            this.PasswordTB.UnderlinedStyle = true;
+            this.empPinTB.BackColor = System.Drawing.SystemColors.Window;
+            this.empPinTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.empPinTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.empPinTB.BorderSize = 5;
+            this.empPinTB.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.empPinTB.ForeColor = System.Drawing.Color.DimGray;
+            this.empPinTB.Location = new System.Drawing.Point(33, 232);
+            this.empPinTB.Margin = new System.Windows.Forms.Padding(4);
+            this.empPinTB.Multiline = false;
+            this.empPinTB.Name = "empPinTB";
+            this.empPinTB.Padding = new System.Windows.Forms.Padding(7);
+            this.empPinTB.PasswordChar = true;
+            this.empPinTB.Size = new System.Drawing.Size(323, 40);
+            this.empPinTB.TabIndex = 3;
+            this.empPinTB.UnderlinedStyle = true;
             // 
-            // tBox1
+            // empIdTB
             // 
-            this.tBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.tBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tBox1.BorderSize = 5;
-            this.tBox1.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox1.Location = new System.Drawing.Point(33, 144);
-            this.tBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.tBox1.Multiline = false;
-            this.tBox1.Name = "tBox1";
-            this.tBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.tBox1.PasswordChar = false;
-            this.tBox1.Size = new System.Drawing.Size(323, 40);
-            this.tBox1.TabIndex = 2;
-            this.tBox1.UnderlinedStyle = true;
+            this.empIdTB.BackColor = System.Drawing.SystemColors.Window;
+            this.empIdTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.empIdTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.empIdTB.BorderSize = 5;
+            this.empIdTB.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.empIdTB.ForeColor = System.Drawing.Color.DimGray;
+            this.empIdTB.Location = new System.Drawing.Point(33, 144);
+            this.empIdTB.Margin = new System.Windows.Forms.Padding(4);
+            this.empIdTB.Multiline = false;
+            this.empIdTB.Name = "empIdTB";
+            this.empIdTB.Padding = new System.Windows.Forms.Padding(7);
+            this.empIdTB.PasswordChar = false;
+            this.empIdTB.Size = new System.Drawing.Size(323, 40);
+            this.empIdTB.TabIndex = 2;
+            this.empIdTB.UnderlinedStyle = true;
             // 
             // Form1
             // 
@@ -186,8 +187,8 @@
         private Tool_Inventory_System.RButtons rButtons1;
         private Label label3;
         private Label label2;
-        private Contols.TBox PasswordTB;
-        private Contols.TBox tBox1;
+        private Contols.TBox empPinTB;
+        private Contols.TBox empIdTB;
         private PictureBox pictureBox1;
         private Label label4;
         private CheckBox checkBox1;
