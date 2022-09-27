@@ -36,7 +36,7 @@ namespace TMS
         //Close Button
         private void rButtons2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
