@@ -69,6 +69,7 @@ namespace TMS
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Employee " + empRemove.Text + " successfully removed!");
                 Con.Close();
+                empRemove.Text = "";
                 populate();
             }
         }
