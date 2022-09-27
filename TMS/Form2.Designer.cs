@@ -806,6 +806,7 @@
             this.rButtons1.Text = "Add User";
             this.rButtons1.TextColor = System.Drawing.Color.White;
             this.rButtons1.UseVisualStyleBackColor = false;
+            this.rButtons1.Click += new System.EventHandler(this.rButtons1_Click);
             // 
             // groupBox5
             // 

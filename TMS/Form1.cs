@@ -33,6 +33,7 @@ namespace TMS
             empPinTB.Text = "";
         }
 
+        //Close Button
         private void rButtons2_Click(object sender, EventArgs e)
         {
             this.Close();
