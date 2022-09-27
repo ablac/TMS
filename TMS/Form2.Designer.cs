@@ -52,7 +52,6 @@
             this.empIdTB = new TMS.Contols.TBox();
             this.tBox1 = new TMS.Contols.TBox();
             this.tBox2 = new TMS.Contols.TBox();
-            this.tBox3 = new TMS.Contols.TBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -65,6 +64,15 @@
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.rButtons1 = new Tool_Inventory_System.RButtons();
             this.rButtons2 = new Tool_Inventory_System.RButtons();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rButtons3 = new Tool_Inventory_System.RButtons();
+            this.rButtons4 = new Tool_Inventory_System.RButtons();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tBox3 = new TMS.Contols.TBox();
+            this.rButtons5 = new Tool_Inventory_System.RButtons();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -80,6 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -308,22 +317,30 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.tBox3);
+            this.groupBox2.Controls.Add(this.rButtons3);
+            this.groupBox2.Controls.Add(this.rButtons4);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.tBox2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(547, 159);
+            this.groupBox2.Location = new System.Drawing.Point(561, 159);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(572, 244);
+            this.groupBox2.Size = new System.Drawing.Size(558, 244);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Add Tool";
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.richTextBox1);
+            this.groupBox3.Controls.Add(this.rButtons5);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.tBox3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.Location = new System.Drawing.Point(547, 409);
+            this.groupBox3.Location = new System.Drawing.Point(561, 409);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(276, 282);
+            this.groupBox3.Size = new System.Drawing.Size(271, 282);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Remove User";
@@ -331,9 +348,9 @@
             // groupBox4
             // 
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(829, 409);
+            this.groupBox4.Location = new System.Drawing.Point(848, 409);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(276, 282);
+            this.groupBox4.Size = new System.Drawing.Size(271, 282);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Remove Tool";
@@ -354,7 +371,7 @@
             this.empIdTB.Name = "empIdTB";
             this.empIdTB.Padding = new System.Windows.Forms.Padding(7);
             this.empIdTB.PasswordChar = false;
-            this.empIdTB.Size = new System.Drawing.Size(203, 43);
+            this.empIdTB.Size = new System.Drawing.Size(230, 43);
             this.empIdTB.TabIndex = 3;
             this.empIdTB.UnderlinedStyle = true;
             // 
@@ -374,7 +391,7 @@
             this.tBox1.Name = "tBox1";
             this.tBox1.Padding = new System.Windows.Forms.Padding(7);
             this.tBox1.PasswordChar = false;
-            this.tBox1.Size = new System.Drawing.Size(203, 43);
+            this.tBox1.Size = new System.Drawing.Size(230, 43);
             this.tBox1.TabIndex = 4;
             this.tBox1.UnderlinedStyle = true;
             // 
@@ -388,35 +405,15 @@
             this.tBox2.BorderSize = 5;
             this.tBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox2.Location = new System.Drawing.Point(23, 75);
+            this.tBox2.Location = new System.Drawing.Point(17, 42);
             this.tBox2.Margin = new System.Windows.Forms.Padding(4);
             this.tBox2.Multiline = false;
             this.tBox2.Name = "tBox2";
             this.tBox2.Padding = new System.Windows.Forms.Padding(7);
             this.tBox2.PasswordChar = false;
-            this.tBox2.Size = new System.Drawing.Size(323, 40);
+            this.tBox2.Size = new System.Drawing.Size(216, 40);
             this.tBox2.TabIndex = 4;
             this.tBox2.UnderlinedStyle = true;
-            // 
-            // tBox3
-            // 
-            this.tBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.tBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tBox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tBox3.BorderSize = 5;
-            this.tBox3.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox3.Location = new System.Drawing.Point(23, 176);
-            this.tBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.tBox3.Multiline = false;
-            this.tBox3.Name = "tBox3";
-            this.tBox3.Padding = new System.Windows.Forms.Padding(7);
-            this.tBox3.PasswordChar = false;
-            this.tBox3.Size = new System.Drawing.Size(323, 40);
-            this.tBox3.TabIndex = 5;
-            this.tBox3.UnderlinedStyle = true;
             // 
             // label5
             // 
@@ -442,11 +439,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(252, 79);
+            this.label7.Location = new System.Drawing.Point(277, 82);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 25);
             this.label7.TabIndex = 8;
             this.label7.Text = "Name";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // tBox4
             // 
@@ -458,13 +456,13 @@
             this.tBox4.BorderSize = 5;
             this.tBox4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox4.Location = new System.Drawing.Point(252, 35);
+            this.tBox4.Location = new System.Drawing.Point(277, 35);
             this.tBox4.Margin = new System.Windows.Forms.Padding(4);
             this.tBox4.Multiline = false;
             this.tBox4.Name = "tBox4";
             this.tBox4.Padding = new System.Windows.Forms.Padding(7);
             this.tBox4.PasswordChar = false;
-            this.tBox4.Size = new System.Drawing.Size(274, 43);
+            this.tBox4.Size = new System.Drawing.Size(230, 43);
             this.tBox4.TabIndex = 7;
             this.tBox4.UnderlinedStyle = true;
             // 
@@ -472,7 +470,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(252, 152);
+            this.label8.Location = new System.Drawing.Point(277, 155);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(155, 25);
             this.label8.TabIndex = 10;
@@ -488,13 +486,13 @@
             this.tBox5.BorderSize = 5;
             this.tBox5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox5.Location = new System.Drawing.Point(252, 108);
+            this.tBox5.Location = new System.Drawing.Point(277, 108);
             this.tBox5.Margin = new System.Windows.Forms.Padding(4);
             this.tBox5.Multiline = false;
             this.tBox5.Name = "tBox5";
             this.tBox5.Padding = new System.Windows.Forms.Padding(7);
             this.tBox5.PasswordChar = false;
-            this.tBox5.Size = new System.Drawing.Size(274, 43);
+            this.tBox5.Size = new System.Drawing.Size(230, 43);
             this.tBox5.TabIndex = 9;
             this.tBox5.UnderlinedStyle = true;
             // 
@@ -521,7 +519,7 @@
             "User Manage Self"});
             this.checkedListBox1.Location = new System.Drawing.Point(6, 33);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(224, 166);
+            this.checkedListBox1.Size = new System.Drawing.Size(243, 166);
             this.checkedListBox1.TabIndex = 0;
             // 
             // checkedListBox2
@@ -535,9 +533,9 @@
             "Add Tools",
             "Remove Users",
             "Remove Tools"});
-            this.checkedListBox2.Location = new System.Drawing.Point(280, 34);
+            this.checkedListBox2.Location = new System.Drawing.Point(261, 34);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(224, 166);
+            this.checkedListBox2.Size = new System.Drawing.Size(243, 166);
             this.checkedListBox2.TabIndex = 1;
             // 
             // rButtons1
@@ -555,7 +553,7 @@
             this.rButtons1.Name = "rButtons1";
             this.rButtons1.Size = new System.Drawing.Size(224, 54);
             this.rButtons1.TabIndex = 12;
-            this.rButtons1.Text = "Login";
+            this.rButtons1.Text = "Add User";
             this.rButtons1.TextColor = System.Drawing.Color.White;
             this.rButtons1.UseVisualStyleBackColor = false;
             // 
@@ -577,6 +575,146 @@
             this.rButtons2.Text = "Cancel";
             this.rButtons2.TextColor = System.Drawing.Color.White;
             this.rButtons2.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(17, 82);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 25);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Tool ID";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Hammer",
+            "Screwdriver",
+            "Mallet",
+            "Axe",
+            "Saw",
+            "Scissors",
+            "Chisel",
+            "Pliers",
+            "Drill",
+            "Tape Measure",
+            "Shovel",
+            "Clamp",
+            "Rench",
+            "Socket"});
+            this.comboBox1.Location = new System.Drawing.Point(297, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(230, 37);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(297, 81);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(110, 25);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Tool Type";
+            // 
+            // rButtons3
+            // 
+            this.rButtons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons3.BorderColor = System.Drawing.Color.Maroon;
+            this.rButtons3.BorderRadius = 40;
+            this.rButtons3.BorderSize = 2;
+            this.rButtons3.FlatAppearance.BorderSize = 0;
+            this.rButtons3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons3.ForeColor = System.Drawing.Color.White;
+            this.rButtons3.Location = new System.Drawing.Point(303, 163);
+            this.rButtons3.Name = "rButtons3";
+            this.rButtons3.Size = new System.Drawing.Size(224, 54);
+            this.rButtons3.TabIndex = 15;
+            this.rButtons3.Text = "Cancel";
+            this.rButtons3.TextColor = System.Drawing.Color.White;
+            this.rButtons3.UseVisualStyleBackColor = false;
+            // 
+            // rButtons4
+            // 
+            this.rButtons4.BackColor = System.Drawing.Color.Green;
+            this.rButtons4.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons4.BorderRadius = 40;
+            this.rButtons4.BorderSize = 2;
+            this.rButtons4.FlatAppearance.BorderSize = 0;
+            this.rButtons4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons4.ForeColor = System.Drawing.Color.White;
+            this.rButtons4.Location = new System.Drawing.Point(17, 164);
+            this.rButtons4.Name = "rButtons4";
+            this.rButtons4.Size = new System.Drawing.Size(224, 54);
+            this.rButtons4.TabIndex = 14;
+            this.rButtons4.Text = "Add Tool";
+            this.rButtons4.TextColor = System.Drawing.Color.White;
+            this.rButtons4.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(7, 75);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(134, 25);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Employee ID";
+            // 
+            // tBox3
+            // 
+            this.tBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.tBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tBox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tBox3.BorderSize = 5;
+            this.tBox3.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tBox3.ForeColor = System.Drawing.Color.DimGray;
+            this.tBox3.Location = new System.Drawing.Point(7, 35);
+            this.tBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.tBox3.Multiline = false;
+            this.tBox3.Name = "tBox3";
+            this.tBox3.Padding = new System.Windows.Forms.Padding(7);
+            this.tBox3.PasswordChar = false;
+            this.tBox3.Size = new System.Drawing.Size(216, 40);
+            this.tBox3.TabIndex = 7;
+            this.tBox3.UnderlinedStyle = true;
+            // 
+            // rButtons5
+            // 
+            this.rButtons5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons5.BorderColor = System.Drawing.Color.Maroon;
+            this.rButtons5.BorderRadius = 40;
+            this.rButtons5.BorderSize = 2;
+            this.rButtons5.FlatAppearance.BorderSize = 0;
+            this.rButtons5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons5.ForeColor = System.Drawing.Color.White;
+            this.rButtons5.Location = new System.Drawing.Point(17, 201);
+            this.rButtons5.Name = "rButtons5";
+            this.rButtons5.Size = new System.Drawing.Size(238, 54);
+            this.rButtons5.TabIndex = 14;
+            this.rButtons5.Text = "Remove User";
+            this.rButtons5.TextColor = System.Drawing.Color.White;
+            this.rButtons5.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 128);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(271, 56);
+            this.richTextBox1.TabIndex = 15;
+            this.richTextBox1.Text = "WARNING THIS IS A NON REVERSABLE ACTION!!!";
             // 
             // Form2
             // 
@@ -608,6 +746,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -636,7 +777,6 @@
         private GroupBox groupBox3;
         private GroupBox groupBox2;
         private GroupBox groupBox1;
-        private Contols.TBox tBox3;
         private Contols.TBox tBox2;
         private GroupBox groupBox5;
         private CheckedListBox checkedListBox2;
@@ -652,5 +792,14 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Tool_Inventory_System.RButtons rButtons2;
         private Tool_Inventory_System.RButtons rButtons1;
+        private ComboBox comboBox1;
+        private Label label9;
+        private RichTextBox richTextBox1;
+        private Tool_Inventory_System.RButtons rButtons5;
+        private Label label11;
+        private Contols.TBox tBox3;
+        private Tool_Inventory_System.RButtons rButtons3;
+        private Tool_Inventory_System.RButtons rButtons4;
+        private Label label10;
     }
 }
