@@ -16,5 +16,13 @@ namespace TMS
         {
             InitializeComponent();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+                PasswordTB.PasswordChar = false;
+            else
+                PasswordTB.PasswordChar = true;
+        }
     }
 }

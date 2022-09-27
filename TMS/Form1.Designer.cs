@@ -35,7 +35,7 @@
             this.rButtons1 = new Tool_Inventory_System.RButtons();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tBox2 = new TMS.Contols.TBox();
+            this.PasswordTB = new TMS.Contols.TBox();
             this.tBox1 = new TMS.Contols.TBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.rButtons1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.tBox2);
+            this.panel1.Controls.Add(this.PasswordTB);
             this.panel1.Controls.Add(this.tBox1);
             this.panel1.Location = new System.Drawing.Point(224, 141);
             this.panel1.Name = "panel1";
@@ -88,6 +88,7 @@
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Show Pin";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // rButtons1
             // 
@@ -128,23 +129,23 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Employee ID";
             // 
-            // tBox2
+            // PasswordTB
             // 
-            this.tBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.tBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tBox2.BorderSize = 5;
-            this.tBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox2.Location = new System.Drawing.Point(33, 232);
-            this.tBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.tBox2.Multiline = false;
-            this.tBox2.Name = "tBox2";
-            this.tBox2.Padding = new System.Windows.Forms.Padding(7);
-            this.tBox2.PasswordChar = false;
-            this.tBox2.Size = new System.Drawing.Size(323, 40);
-            this.tBox2.TabIndex = 3;
-            this.tBox2.UnderlinedStyle = true;
+            this.PasswordTB.BackColor = System.Drawing.SystemColors.Window;
+            this.PasswordTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PasswordTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PasswordTB.BorderSize = 5;
+            this.PasswordTB.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PasswordTB.ForeColor = System.Drawing.Color.DimGray;
+            this.PasswordTB.Location = new System.Drawing.Point(33, 232);
+            this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
+            this.PasswordTB.Multiline = false;
+            this.PasswordTB.Name = "PasswordTB";
+            this.PasswordTB.Padding = new System.Windows.Forms.Padding(7);
+            this.PasswordTB.PasswordChar = true;
+            this.PasswordTB.Size = new System.Drawing.Size(323, 40);
+            this.PasswordTB.TabIndex = 3;
+            this.PasswordTB.UnderlinedStyle = true;
             // 
             // tBox1
             // 
@@ -185,7 +186,7 @@
         private Tool_Inventory_System.RButtons rButtons1;
         private Label label3;
         private Label label2;
-        private Contols.TBox tBox2;
+        private Contols.TBox PasswordTB;
         private Contols.TBox tBox1;
         private PictureBox pictureBox1;
         private Label label4;
