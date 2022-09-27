@@ -32,5 +32,10 @@ namespace TMS
             empIdTB.Text = "";
             empPinTB.Text = "";
         }
+
+        private void rButtons2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
