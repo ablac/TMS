@@ -73,7 +73,7 @@
             this.toolIDAddTB = new TMS.Contols.TBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rButtons2 = new Tool_Inventory_System.RButtons();
-            this.rButtons1 = new Tool_Inventory_System.RButtons();
+            this.add_User = new Tool_Inventory_System.RButtons();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.empPermissions2 = new System.Windows.Forms.CheckedListBox();
             this.empPermissions1 = new System.Windows.Forms.CheckedListBox();
@@ -750,7 +750,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rButtons2);
-            this.groupBox1.Controls.Add(this.rButtons1);
+            this.groupBox1.Controls.Add(this.add_User);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.empPnumAddTB);
@@ -788,25 +788,25 @@
             this.rButtons2.UseVisualStyleBackColor = false;
             this.rButtons2.Click += new System.EventHandler(this.rButtons2_Click);
             // 
-            // rButtons1
+            // add_User
             // 
-            this.rButtons1.BackColor = System.Drawing.Color.Green;
-            this.rButtons1.BackgroundColor = System.Drawing.Color.Green;
-            this.rButtons1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.rButtons1.BorderRadius = 40;
-            this.rButtons1.BorderSize = 2;
-            this.rButtons1.FlatAppearance.BorderSize = 0;
-            this.rButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons1.ForeColor = System.Drawing.Color.White;
-            this.rButtons1.Location = new System.Drawing.Point(22, 451);
-            this.rButtons1.Name = "rButtons1";
-            this.rButtons1.Size = new System.Drawing.Size(224, 54);
-            this.rButtons1.TabIndex = 12;
-            this.rButtons1.Text = "Add User";
-            this.rButtons1.TextColor = System.Drawing.Color.White;
-            this.rButtons1.UseVisualStyleBackColor = false;
-            this.rButtons1.Click += new System.EventHandler(this.rButtons1_Click);
+            this.add_User.BackColor = System.Drawing.Color.Green;
+            this.add_User.BackgroundColor = System.Drawing.Color.Green;
+            this.add_User.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.add_User.BorderRadius = 40;
+            this.add_User.BorderSize = 2;
+            this.add_User.FlatAppearance.BorderSize = 0;
+            this.add_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_User.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.add_User.ForeColor = System.Drawing.Color.White;
+            this.add_User.Location = new System.Drawing.Point(22, 451);
+            this.add_User.Name = "add_User";
+            this.add_User.Size = new System.Drawing.Size(224, 54);
+            this.add_User.TabIndex = 12;
+            this.add_User.Text = "Add User";
+            this.add_User.TextColor = System.Drawing.Color.White;
+            this.add_User.UseVisualStyleBackColor = false;
+            this.add_User.Click += new System.EventHandler(this.add_User_Click);
             // 
             // groupBox5
             // 
@@ -1098,7 +1098,7 @@
         private Contols.TBox empIDAddTB;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Tool_Inventory_System.RButtons rButtons2;
-        private Tool_Inventory_System.RButtons rButtons1;
+        private Tool_Inventory_System.RButtons add_User;
         private ComboBox toolTypeAddTB;
         private Label label9;
         private RichTextBox richTextBox1;
