@@ -83,7 +83,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.EmpPinAddTB = new TMS.Contols.TBox();
-            this.EmpIDAddTB = new TMS.Contols.TBox();
+            this.empIDAddTB = new TMS.Contols.TBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -760,7 +760,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.EmpPinAddTB);
-            this.groupBox1.Controls.Add(this.EmpIDAddTB);
+            this.groupBox1.Controls.Add(this.empIDAddTB);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(8, 159);
             this.groupBox1.Name = "groupBox1";
@@ -787,6 +787,7 @@
             this.rButtons2.Text = "Cancel";
             this.rButtons2.TextColor = System.Drawing.Color.White;
             this.rButtons2.UseVisualStyleBackColor = false;
+            this.rButtons2.Click += new System.EventHandler(this.rButtons2_Click);
             // 
             // rButtons1
             // 
@@ -949,25 +950,25 @@
             this.EmpPinAddTB.TabIndex = 4;
             this.EmpPinAddTB.UnderlinedStyle = true;
             // 
-            // EmpIDAddTB
+            // empIDAddTB
             // 
-            this.EmpIDAddTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.empIDAddTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.EmpIDAddTB.BackColor = System.Drawing.SystemColors.Window;
-            this.EmpIDAddTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.EmpIDAddTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.EmpIDAddTB.BorderSize = 5;
-            this.EmpIDAddTB.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EmpIDAddTB.ForeColor = System.Drawing.Color.DimGray;
-            this.EmpIDAddTB.Location = new System.Drawing.Point(16, 35);
-            this.EmpIDAddTB.Margin = new System.Windows.Forms.Padding(4);
-            this.EmpIDAddTB.Multiline = false;
-            this.EmpIDAddTB.Name = "EmpIDAddTB";
-            this.EmpIDAddTB.Padding = new System.Windows.Forms.Padding(7);
-            this.EmpIDAddTB.PasswordChar = false;
-            this.EmpIDAddTB.Size = new System.Drawing.Size(230, 43);
-            this.EmpIDAddTB.TabIndex = 3;
-            this.EmpIDAddTB.UnderlinedStyle = true;
+            this.empIDAddTB.BackColor = System.Drawing.SystemColors.Window;
+            this.empIDAddTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.empIDAddTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.empIDAddTB.BorderSize = 5;
+            this.empIDAddTB.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.empIDAddTB.ForeColor = System.Drawing.Color.DimGray;
+            this.empIDAddTB.Location = new System.Drawing.Point(16, 35);
+            this.empIDAddTB.Margin = new System.Windows.Forms.Padding(4);
+            this.empIDAddTB.Multiline = false;
+            this.empIDAddTB.Name = "empIDAddTB";
+            this.empIDAddTB.Padding = new System.Windows.Forms.Padding(7);
+            this.empIDAddTB.PasswordChar = false;
+            this.empIDAddTB.Size = new System.Drawing.Size(230, 43);
+            this.empIDAddTB.TabIndex = 3;
+            this.empIDAddTB.UnderlinedStyle = true;
             // 
             // panel1
             // 
@@ -1081,7 +1082,7 @@
         private Label label6;
         private Label label5;
         private Contols.TBox EmpPinAddTB;
-        private Contols.TBox EmpIDAddTB;
+        private Contols.TBox empIDAddTB;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Tool_Inventory_System.RButtons rButtons2;
         private Tool_Inventory_System.RButtons rButtons1;
