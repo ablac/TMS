@@ -156,7 +156,6 @@
             this.label4.Size = new System.Drawing.Size(668, 82);
             this.label4.TabIndex = 0;
             this.label4.Text = "Check Tools In/Out";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // tabPage2
             // 
@@ -686,7 +685,6 @@
             this.label7.Size = new System.Drawing.Size(68, 25);
             this.label7.TabIndex = 8;
             this.label7.Text = "Name";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // empNameAddTB
             // 
@@ -801,7 +799,6 @@
             this.label1.Size = new System.Drawing.Size(859, 82);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Users and Tools";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form2
             // 
