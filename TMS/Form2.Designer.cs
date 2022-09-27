@@ -30,7 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.rButtons11 = new Tool_Inventory_System.RButtons();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rButtons10 = new Tool_Inventory_System.RButtons();
             this.label13 = new System.Windows.Forms.Label();
@@ -40,16 +39,18 @@
             this.label14 = new System.Windows.Forms.Label();
             this.toolIDOut = new TMS.Contols.TBox();
             this.rButtons8 = new Tool_Inventory_System.RButtons();
-            this.rButtons7 = new Tool_Inventory_System.RButtons();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -67,9 +68,9 @@
             this.rButtons3 = new Tool_Inventory_System.RButtons();
             this.rButtons4 = new Tool_Inventory_System.RButtons();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.toolTypeAddTB = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.tBox2 = new TMS.Contols.TBox();
+            this.toolIDAddTB = new TMS.Contols.TBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rButtons2 = new Tool_Inventory_System.RButtons();
             this.rButtons1 = new Tool_Inventory_System.RButtons();
@@ -85,6 +86,7 @@
             this.EmpPinAddTB = new TMS.Contols.TBox();
             this.empIDAddTB = new TMS.Contols.TBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -128,10 +130,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.DarkGray;
-            this.tabPage1.Controls.Add(this.rButtons11);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox6);
-            this.tabPage1.Controls.Add(this.rButtons7);
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
@@ -139,26 +139,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1127, 722);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Check In/Out";
-            // 
-            // rButtons11
-            // 
-            this.rButtons11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.rButtons11.BackColor = System.Drawing.Color.Green;
-            this.rButtons11.BackgroundColor = System.Drawing.Color.Green;
-            this.rButtons11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.rButtons11.BorderRadius = 40;
-            this.rButtons11.BorderSize = 2;
-            this.rButtons11.FlatAppearance.BorderSize = 0;
-            this.rButtons11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons11.ForeColor = System.Drawing.Color.White;
-            this.rButtons11.Location = new System.Drawing.Point(358, 644);
-            this.rButtons11.Name = "rButtons11";
-            this.rButtons11.Size = new System.Drawing.Size(224, 54);
-            this.rButtons11.TabIndex = 15;
-            this.rButtons11.Text = "Check Out";
-            this.rButtons11.TextColor = System.Drawing.Color.White;
-            this.rButtons11.UseVisualStyleBackColor = false;
             // 
             // groupBox7
             // 
@@ -305,30 +285,10 @@
             this.rButtons8.TextColor = System.Drawing.Color.White;
             this.rButtons8.UseVisualStyleBackColor = false;
             // 
-            // rButtons7
-            // 
-            this.rButtons7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.rButtons7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rButtons7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rButtons7.BorderColor = System.Drawing.Color.Maroon;
-            this.rButtons7.BorderRadius = 40;
-            this.rButtons7.BorderSize = 2;
-            this.rButtons7.FlatAppearance.BorderSize = 0;
-            this.rButtons7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons7.ForeColor = System.Drawing.Color.White;
-            this.rButtons7.Location = new System.Drawing.Point(588, 644);
-            this.rButtons7.Name = "rButtons7";
-            this.rButtons7.Size = new System.Drawing.Size(224, 54);
-            this.rButtons7.TabIndex = 15;
-            this.rButtons7.Text = "Cancel";
-            this.rButtons7.TextColor = System.Drawing.Color.White;
-            this.rButtons7.UseVisualStyleBackColor = false;
-            this.rButtons7.Click += new System.EventHandler(this.rButtons7_Click);
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Purple;
+            this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -336,6 +296,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1121, 150);
             this.panel4.TabIndex = 3;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(1082, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(39, 37);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "X";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // pictureBox4
             // 
@@ -353,10 +325,10 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(257, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(668, 82);
+            this.label4.Size = new System.Drawing.Size(486, 59);
             this.label4.TabIndex = 0;
             this.label4.Text = "Check Tools In/Out";
             // 
@@ -374,6 +346,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Olive;
+            this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -381,6 +354,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1121, 150);
             this.panel3.TabIndex = 2;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(1082, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 37);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "X";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // pictureBox3
             // 
@@ -398,10 +383,10 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(257, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(612, 82);
+            this.label3.Size = new System.Drawing.Size(445, 59);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tool History Logs";
             // 
@@ -419,6 +404,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -426,6 +412,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1121, 150);
             this.panel2.TabIndex = 1;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(1082, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 37);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "X";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // pictureBox2
             // 
@@ -443,10 +441,10 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(257, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(623, 82);
+            this.label2.Size = new System.Drawing.Size(454, 59);
             this.label2.TabIndex = 0;
             this.label2.Text = "User History Logs";
             // 
@@ -619,9 +617,9 @@
             this.groupBox2.Controls.Add(this.rButtons3);
             this.groupBox2.Controls.Add(this.rButtons4);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.toolTypeAddTB);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.tBox2);
+            this.groupBox2.Controls.Add(this.toolIDAddTB);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.Location = new System.Drawing.Point(561, 159);
             this.groupBox2.Name = "groupBox2";
@@ -648,6 +646,7 @@
             this.rButtons3.Text = "Cancel";
             this.rButtons3.TextColor = System.Drawing.Color.White;
             this.rButtons3.UseVisualStyleBackColor = false;
+            this.rButtons3.Click += new System.EventHandler(this.rButtons3_Click);
             // 
             // rButtons4
             // 
@@ -678,9 +677,9 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "Tool Type";
             // 
-            // comboBox1
+            // toolTypeAddTB
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.toolTypeAddTB.AutoCompleteCustomSource.AddRange(new string[] {
             "Hammer",
             "Screwdriver",
             "Mallet",
@@ -695,10 +694,10 @@
             "Clamp",
             "Rench",
             "Socket"});
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.toolTypeAddTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.toolTypeAddTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.toolTypeAddTB.FormattingEnabled = true;
+            this.toolTypeAddTB.Items.AddRange(new object[] {
             "Hammer",
             "Screwdriver",
             "Mallet",
@@ -713,10 +712,10 @@
             "Clamp",
             "Rench",
             "Socket"});
-            this.comboBox1.Location = new System.Drawing.Point(297, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(230, 37);
-            this.comboBox1.TabIndex = 7;
+            this.toolTypeAddTB.Location = new System.Drawing.Point(297, 41);
+            this.toolTypeAddTB.Name = "toolTypeAddTB";
+            this.toolTypeAddTB.Size = new System.Drawing.Size(230, 37);
+            this.toolTypeAddTB.TabIndex = 7;
             // 
             // label9
             // 
@@ -728,25 +727,25 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "Tool ID";
             // 
-            // tBox2
+            // toolIDAddTB
             // 
-            this.tBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.toolIDAddTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.tBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tBox2.BorderSize = 5;
-            this.tBox2.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.tBox2.Location = new System.Drawing.Point(17, 42);
-            this.tBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.tBox2.Multiline = false;
-            this.tBox2.Name = "tBox2";
-            this.tBox2.Padding = new System.Windows.Forms.Padding(7);
-            this.tBox2.PasswordChar = false;
-            this.tBox2.Size = new System.Drawing.Size(216, 40);
-            this.tBox2.TabIndex = 4;
-            this.tBox2.UnderlinedStyle = true;
+            this.toolIDAddTB.BackColor = System.Drawing.SystemColors.Window;
+            this.toolIDAddTB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.toolIDAddTB.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolIDAddTB.BorderSize = 5;
+            this.toolIDAddTB.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.toolIDAddTB.ForeColor = System.Drawing.Color.DimGray;
+            this.toolIDAddTB.Location = new System.Drawing.Point(17, 42);
+            this.toolIDAddTB.Margin = new System.Windows.Forms.Padding(4);
+            this.toolIDAddTB.Multiline = false;
+            this.toolIDAddTB.Name = "toolIDAddTB";
+            this.toolIDAddTB.Padding = new System.Windows.Forms.Padding(7);
+            this.toolIDAddTB.PasswordChar = false;
+            this.toolIDAddTB.Size = new System.Drawing.Size(216, 40);
+            this.toolIDAddTB.TabIndex = 4;
+            this.toolIDAddTB.UnderlinedStyle = true;
             // 
             // groupBox1
             // 
@@ -973,6 +972,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -980,6 +980,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1121, 150);
             this.panel1.TabIndex = 0;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(1082, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(39, 37);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "X";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // pictureBox1
             // 
@@ -997,10 +1009,10 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(257, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(859, 82);
+            this.label1.Size = new System.Drawing.Size(627, 59);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Users and Tools";
             // 
@@ -1071,7 +1083,7 @@
         private GroupBox groupBox3;
         private GroupBox groupBox2;
         private GroupBox groupBox1;
-        private Contols.TBox tBox2;
+        private Contols.TBox toolIDAddTB;
         private GroupBox groupBox5;
         private CheckedListBox empPermissions2;
         private CheckedListBox empPermissions1;
@@ -1086,7 +1098,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Tool_Inventory_System.RButtons rButtons2;
         private Tool_Inventory_System.RButtons rButtons1;
-        private ComboBox comboBox1;
+        private ComboBox toolTypeAddTB;
         private Label label9;
         private RichTextBox richTextBox1;
         private Tool_Inventory_System.RButtons rButtons5;
@@ -1100,7 +1112,6 @@
         private Label label12;
         private Contols.TBox tBox6;
         private GroupBox groupBox6;
-        private Tool_Inventory_System.RButtons rButtons7;
         private Tool_Inventory_System.RButtons rButtons8;
         private GroupBox groupBox7;
         private Label label13;
@@ -1108,7 +1119,10 @@
         private Tool_Inventory_System.RButtons rButtons9;
         private Label label14;
         private Contols.TBox toolIDOut;
-        private Tool_Inventory_System.RButtons rButtons11;
         private Tool_Inventory_System.RButtons rButtons10;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private Label label18;
     }
 }

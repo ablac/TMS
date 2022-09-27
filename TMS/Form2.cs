@@ -29,5 +29,31 @@ namespace TMS
                 empPermissions2.SetItemCheckState(i, CheckState.Unchecked);
             }
         }
+
+        private void rButtons3_Click(object sender, EventArgs e)
+        {
+            toolIDAddTB.Text = "";
+            toolTypeAddTB.Text = "";
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
