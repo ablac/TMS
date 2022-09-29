@@ -19,16 +19,22 @@ namespace TMS
             InitializeComponent();
             populate();
         }
+
+        //Create SQL Connection
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Keith\OneDrive\Documents\EmployeesDB.mdf;Integrated Security=True;Connect Timeout=30");
+        
+        //Add User Button
         private void add_User_Click(object sender, EventArgs e)
         {
             try
             {
+                //Open SQL and Save User
                 Con.Open();
                 SqlCommand cmd = new SqlCommand("insert into Employees values('" + empIDAddTB.Text + "','" + EmpPinAddTB.Text + "', '" + empNameAddTB.Text + "','" + empPnumAddTB.Text + "')", Con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Employees Successfully Added");
                 Con.Close();
+                //Reloead User List
                 populate();
             }
             catch
@@ -36,6 +42,8 @@ namespace TMS
 
             }
         }
+
+        //Reload User List 
         void populate()
         {
             try
@@ -55,6 +63,7 @@ namespace TMS
             }
         }
 
+        //Remove Employee from Database
         private void rButtons5_Click(object sender, EventArgs e)
         {
             if (empRemove.Text == "")
@@ -63,6 +72,7 @@ namespace TMS
             }
             else
             {
+                //Delete User from SQL
                 Con.Open();
                 string myquery = "delete from Employees where Employee_ID='" + empRemove.Text + "'";
                 SqlCommand cmd = new SqlCommand(myquery, Con);

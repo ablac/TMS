@@ -75,8 +75,16 @@
             this.rButtons2 = new Tool_Inventory_System.RButtons();
             this.add_User = new Tool_Inventory_System.RButtons();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.empPermissions2 = new System.Windows.Forms.CheckedListBox();
-            this.empPermissions1 = new System.Windows.Forms.CheckedListBox();
+            this.RT_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.TH_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.UHS_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.THS_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.CIT_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.COT_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.RU_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.AU_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.AT_Tools_CB = new System.Windows.Forms.CheckBox();
+            this.UH_Tools_CB = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.empPnumAddTB = new TMS.Contols.TBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -833,8 +841,16 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.empPermissions2);
-            this.groupBox5.Controls.Add(this.empPermissions1);
+            this.groupBox5.Controls.Add(this.RT_Tools_CB);
+            this.groupBox5.Controls.Add(this.TH_Tools_CB);
+            this.groupBox5.Controls.Add(this.UHS_Tools_CB);
+            this.groupBox5.Controls.Add(this.THS_Tools_CB);
+            this.groupBox5.Controls.Add(this.CIT_Tools_CB);
+            this.groupBox5.Controls.Add(this.COT_Tools_CB);
+            this.groupBox5.Controls.Add(this.RU_Tools_CB);
+            this.groupBox5.Controls.Add(this.AU_Tools_CB);
+            this.groupBox5.Controls.Add(this.AT_Tools_CB);
+            this.groupBox5.Controls.Add(this.UH_Tools_CB);
             this.groupBox5.Location = new System.Drawing.Point(16, 206);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(510, 212);
@@ -842,36 +858,115 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Permissions";
             // 
-            // empPermissions2
+            // RT_Tools_CB
             // 
-            this.empPermissions2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.empPermissions2.FormattingEnabled = true;
-            this.empPermissions2.Items.AddRange(new object[] {
-            "Tool History",
-            "User History",
-            "Add Users",
-            "Add Tools",
-            "Remove Users",
-            "Remove Tools"});
-            this.empPermissions2.Location = new System.Drawing.Point(261, 34);
-            this.empPermissions2.Name = "empPermissions2";
-            this.empPermissions2.Size = new System.Drawing.Size(243, 166);
-            this.empPermissions2.TabIndex = 1;
+            this.RT_Tools_CB.AutoSize = true;
+            this.RT_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RT_Tools_CB.Location = new System.Drawing.Point(321, 171);
+            this.RT_Tools_CB.Name = "RT_Tools_CB";
+            this.RT_Tools_CB.Size = new System.Drawing.Size(164, 29);
+            this.RT_Tools_CB.TabIndex = 12;
+            this.RT_Tools_CB.Text = "Remove Tools";
+            this.RT_Tools_CB.UseVisualStyleBackColor = true;
             // 
-            // empPermissions1
+            // TH_Tools_CB
             // 
-            this.empPermissions1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.empPermissions1.FormattingEnabled = true;
-            this.empPermissions1.Items.AddRange(new object[] {
-            "Check Out Tools",
-            "Check In Tools",
-            "Tool History Self",
-            "User History Self",
-            "User Manage Self"});
-            this.empPermissions1.Location = new System.Drawing.Point(6, 33);
-            this.empPermissions1.Name = "empPermissions1";
-            this.empPermissions1.Size = new System.Drawing.Size(243, 166);
-            this.empPermissions1.TabIndex = 0;
+            this.TH_Tools_CB.AutoSize = true;
+            this.TH_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TH_Tools_CB.Location = new System.Drawing.Point(25, 171);
+            this.TH_Tools_CB.Name = "TH_Tools_CB";
+            this.TH_Tools_CB.Size = new System.Drawing.Size(142, 29);
+            this.TH_Tools_CB.TabIndex = 11;
+            this.TH_Tools_CB.Text = "Tool History";
+            this.TH_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // UHS_Tools_CB
+            // 
+            this.UHS_Tools_CB.AutoSize = true;
+            this.UHS_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UHS_Tools_CB.Location = new System.Drawing.Point(25, 136);
+            this.UHS_Tools_CB.Name = "UHS_Tools_CB";
+            this.UHS_Tools_CB.Size = new System.Drawing.Size(183, 29);
+            this.UHS_Tools_CB.TabIndex = 10;
+            this.UHS_Tools_CB.Text = "User History Self";
+            this.UHS_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // THS_Tools_CB
+            // 
+            this.THS_Tools_CB.AutoSize = true;
+            this.THS_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.THS_Tools_CB.Location = new System.Drawing.Point(25, 101);
+            this.THS_Tools_CB.Name = "THS_Tools_CB";
+            this.THS_Tools_CB.Size = new System.Drawing.Size(181, 29);
+            this.THS_Tools_CB.TabIndex = 9;
+            this.THS_Tools_CB.Text = "Tool History Self";
+            this.THS_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // CIT_Tools_CB
+            // 
+            this.CIT_Tools_CB.AutoSize = true;
+            this.CIT_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CIT_Tools_CB.Location = new System.Drawing.Point(25, 66);
+            this.CIT_Tools_CB.Name = "CIT_Tools_CB";
+            this.CIT_Tools_CB.Size = new System.Drawing.Size(170, 29);
+            this.CIT_Tools_CB.TabIndex = 8;
+            this.CIT_Tools_CB.Text = "Check In Tools";
+            this.CIT_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // COT_Tools_CB
+            // 
+            this.COT_Tools_CB.AutoSize = true;
+            this.COT_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.COT_Tools_CB.Location = new System.Drawing.Point(25, 31);
+            this.COT_Tools_CB.Name = "COT_Tools_CB";
+            this.COT_Tools_CB.Size = new System.Drawing.Size(186, 29);
+            this.COT_Tools_CB.TabIndex = 7;
+            this.COT_Tools_CB.Text = "Check Out Tools";
+            this.COT_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // RU_Tools_CB
+            // 
+            this.RU_Tools_CB.AutoSize = true;
+            this.RU_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RU_Tools_CB.Location = new System.Drawing.Point(321, 136);
+            this.RU_Tools_CB.Name = "RU_Tools_CB";
+            this.RU_Tools_CB.Size = new System.Drawing.Size(166, 29);
+            this.RU_Tools_CB.TabIndex = 6;
+            this.RU_Tools_CB.Text = "Remove Users";
+            this.RU_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // AU_Tools_CB
+            // 
+            this.AU_Tools_CB.AutoSize = true;
+            this.AU_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AU_Tools_CB.Location = new System.Drawing.Point(321, 66);
+            this.AU_Tools_CB.Name = "AU_Tools_CB";
+            this.AU_Tools_CB.Size = new System.Drawing.Size(130, 29);
+            this.AU_Tools_CB.TabIndex = 4;
+            this.AU_Tools_CB.Text = "Add Users";
+            this.AU_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // AT_Tools_CB
+            // 
+            this.AT_Tools_CB.AutoSize = true;
+            this.AT_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AT_Tools_CB.Location = new System.Drawing.Point(321, 101);
+            this.AT_Tools_CB.Name = "AT_Tools_CB";
+            this.AT_Tools_CB.Size = new System.Drawing.Size(128, 29);
+            this.AT_Tools_CB.TabIndex = 5;
+            this.AT_Tools_CB.Text = "Add Tools";
+            this.AT_Tools_CB.UseVisualStyleBackColor = true;
+            // 
+            // UH_Tools_CB
+            // 
+            this.UH_Tools_CB.AutoSize = true;
+            this.UH_Tools_CB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UH_Tools_CB.Location = new System.Drawing.Point(321, 31);
+            this.UH_Tools_CB.Name = "UH_Tools_CB";
+            this.UH_Tools_CB.Size = new System.Drawing.Size(144, 29);
+            this.UH_Tools_CB.TabIndex = 3;
+            this.UH_Tools_CB.Text = "User History";
+            this.UH_Tools_CB.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -1217,6 +1312,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1259,8 +1355,6 @@
         private GroupBox groupBox1;
         private Contols.TBox toolIDAddTB;
         private GroupBox groupBox5;
-        private CheckedListBox empPermissions2;
-        private CheckedListBox empPermissions1;
         private Label label8;
         private Contols.TBox empPnumAddTB;
         private Label label7;
@@ -1310,5 +1404,15 @@
         private PictureBox pictureBox6;
         private Label label22;
         private DataGridView dataGridView1;
+        private CheckBox RT_Tools_CB;
+        private CheckBox TH_Tools_CB;
+        private CheckBox UHS_Tools_CB;
+        private CheckBox THS_Tools_CB;
+        private CheckBox CIT_Tools_CB;
+        private CheckBox COT_Tools_CB;
+        private CheckBox RU_Tools_CB;
+        private CheckBox AU_Tools_CB;
+        private CheckBox AT_Tools_CB;
+        private CheckBox UH_Tools_CB;
     }
 }

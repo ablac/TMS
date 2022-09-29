@@ -14,20 +14,26 @@ namespace TMS
             empNameAddTB.Text = "";
             empPnumAddTB.Text = "";
             EmpPinAddTB.Text = "";
-            foreach (int i in empPermissions1.CheckedIndices)
-            {
-                empPermissions1.SetItemCheckState(i, CheckState.Unchecked);
-            }
-            foreach (int i in empPermissions2.CheckedIndices)
-            {
-                empPermissions2.SetItemCheckState(i, CheckState.Unchecked);
-            }
+            empRemove.Text = "";
+            toolRemove.Text = "";
+            RT_Tools_CB.Checked = false;
+            RU_Tools_CB.Checked = false;
+            AT_Tools_CB.Checked = false;
+            AU_Tools_CB.Checked = false;
+            UH_Tools_CB.Checked = false;
+            TH_Tools_CB.Checked = false;
+            UHS_Tools_CB.Checked = false;
+            THS_Tools_CB.Checked = false;
+            CIT_Tools_CB.Checked = false;
+            COT_Tools_CB.Checked = false;
         }
 
         private void rButtons3_Click(object sender, EventArgs e)
         {
             toolIDAddTB.Text = "";
             toolTypeAddTB.Text = "";
+            empRemove.Text = "";
+            toolRemove.Text = "";
         }
 
         //Close Application Buttons
