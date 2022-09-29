@@ -8,6 +8,7 @@ namespace TMS
 {
     public partial class Form2
     {
+        //Cancel Button Add Users
         private void rButtons2_Click(object sender, EventArgs e)
         {
             empIDAddTB.Text = "";
@@ -27,7 +28,7 @@ namespace TMS
             CIT_Tools_CB.Checked = false;
             COT_Tools_CB.Checked = false;
         }
-
+        //Cancel Button Add Tools
         private void rButtons3_Click(object sender, EventArgs e)
         {
             toolIDAddTB.Text = "";

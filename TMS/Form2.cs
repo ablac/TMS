@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TMS
 {
@@ -19,10 +20,9 @@ namespace TMS
             InitializeComponent();
             populate();
         }
-
-        //Create SQL Connection
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Keith\OneDrive\Documents\EmployeesDB.mdf;Integrated Security=True;Connect Timeout=30");
         
+        //Create SQL Connection
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Keith\source\repos\TMS\TMS\Database\TMS.mdf;Integrated Security=True;Connect Timeout=30");
         //Add User Button
         private void add_User_Click(object sender, EventArgs e)
         {
