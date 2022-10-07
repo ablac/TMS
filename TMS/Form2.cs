@@ -20,6 +20,7 @@ namespace TMS
         {
             InitializeComponent();
             PopEmp();
+            PopPerm();
             PopTools();
             String Message = "Employee ID: " + Global.Emp_ID;
             TB_EMP_ID1.Text = Message;
@@ -36,7 +37,7 @@ namespace TMS
 
         //********UPDATES********
 
-        //Reload User List 
+        //Reload Employees List 
         void PopEmp()
         {
             try
@@ -50,6 +51,25 @@ namespace TMS
                 EmpGridView.DataSource = ds.Tables[0];
                 Con.Close();
                 ClearEmp();
+            }
+            catch
+            {
+
+            }
+        }
+        //Reload Permissions List 
+        void PopPerm()
+        {
+            try
+            {
+                Con.Open();
+                string Myquery = "select * from Permissions";
+                SqlDataAdapter da = new SqlDataAdapter(Myquery, Con);
+                SqlCommandBuilder builder = new SqlCommandBuilder(da);
+                var ds = new DataSet();
+                da.Fill(ds);
+                PermGridView.DataSource = ds.Tables[0];
+                Con.Close();
             }
             catch
             {
@@ -181,6 +201,7 @@ namespace TMS
                 Con.Close();
                 //Reloead User List
                 PopEmp();
+                PopPerm();
                 ClearEmp();
             }
             catch
@@ -199,6 +220,7 @@ namespace TMS
             Con.Close();
             empRemove.Text = "";
             PopEmp();
+            PopPerm();
             ClearEmp();
         }
     }

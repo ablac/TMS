@@ -109,7 +109,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.Permissions = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.PermGridView = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.TB_EMP_ID6 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -148,7 +148,7 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Permissions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PermGridView)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.Tools.SuspendLayout();
@@ -1272,7 +1272,7 @@
             // Permissions
             // 
             this.Permissions.AllowDrop = true;
-            this.Permissions.Controls.Add(this.dataGridView1);
+            this.Permissions.Controls.Add(this.PermGridView);
             this.Permissions.Controls.Add(this.panel7);
             this.Permissions.Location = new System.Drawing.Point(4, 38);
             this.Permissions.Name = "Permissions";
@@ -1282,16 +1282,16 @@
             this.Permissions.Text = "Permissions";
             this.Permissions.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // PermGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1121, 566);
-            this.dataGridView1.TabIndex = 6;
+            this.PermGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PermGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PermGridView.Location = new System.Drawing.Point(3, 153);
+            this.PermGridView.Name = "PermGridView";
+            this.PermGridView.RowHeadersWidth = 62;
+            this.PermGridView.RowTemplate.Height = 33;
+            this.PermGridView.Size = new System.Drawing.Size(1121, 566);
+            this.PermGridView.TabIndex = 6;
             // 
             // panel7
             // 
@@ -1345,9 +1345,9 @@
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label24.Location = new System.Drawing.Point(257, 25);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(403, 59);
+            this.label24.Size = new System.Drawing.Size(564, 59);
             this.label24.TabIndex = 0;
-            this.label24.Text = "Tools Database";
+            this.label24.Text = "Permissions Database";
             // 
             // Tools
             // 
@@ -1475,7 +1475,7 @@
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Permissions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PermGridView)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1573,7 +1573,7 @@
         private CheckBox AT_Tools_CB;
         private CheckBox UH_Tools_CB;
         private TabPage Permissions;
-        private DataGridView dataGridView1;
+        private DataGridView PermGridView;
         private Panel panel7;
         private Label label23;
         private PictureBox pictureBox7;
