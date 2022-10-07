@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TB_EMP_ID7 = new System.Windows.Forms.TabControl();
+            this.TabGroup = new System.Windows.Forms.TabControl();
             this.CheckInOut = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rButtons10 = new Tool_Inventory_System.RButtons();
@@ -40,16 +40,19 @@
             this.toolIDOut = new TMS.Contols.TBox();
             this.rButtons8 = new Tool_Inventory_System.RButtons();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ToolHistory = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID2 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.UserHistory = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID3 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -94,36 +97,33 @@
             this.EmpPinAddTB = new TMS.Contols.TBox();
             this.empIDAddTB = new TMS.Contols.TBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID4 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Employees = new System.Windows.Forms.TabPage();
             this.EmpGridView = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID5 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.Permissions = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID6 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label24 = new System.Windows.Forms.Label();
             this.Tools = new System.Windows.Forms.TabPage();
             this.dataGridTools = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID7 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.TB_EMP_ID1 = new System.Windows.Forms.TextBox();
-            this.TB_EMP_ID2 = new System.Windows.Forms.TextBox();
-            this.TB_EMP_ID3 = new System.Windows.Forms.TextBox();
-            this.TB_EMP_ID4 = new System.Windows.Forms.TextBox();
-            this.TB_EMP_ID5 = new System.Windows.Forms.TextBox();
-            this.TB_EMP_ID6 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.TB_EMP_ID7.SuspendLayout();
+            this.TabGroup.SuspendLayout();
             this.CheckInOut.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -157,22 +157,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // TB_EMP_ID7
+            // TabGroup
             // 
-            this.TB_EMP_ID7.Controls.Add(this.CheckInOut);
-            this.TB_EMP_ID7.Controls.Add(this.ToolHistory);
-            this.TB_EMP_ID7.Controls.Add(this.UserHistory);
-            this.TB_EMP_ID7.Controls.Add(this.Manage);
-            this.TB_EMP_ID7.Controls.Add(this.Employees);
-            this.TB_EMP_ID7.Controls.Add(this.Permissions);
-            this.TB_EMP_ID7.Controls.Add(this.Tools);
-            this.TB_EMP_ID7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TB_EMP_ID7.Location = new System.Drawing.Point(0, 0);
-            this.TB_EMP_ID7.Multiline = true;
-            this.TB_EMP_ID7.Name = "TB_EMP_ID7";
-            this.TB_EMP_ID7.SelectedIndex = 0;
-            this.TB_EMP_ID7.Size = new System.Drawing.Size(1135, 764);
-            this.TB_EMP_ID7.TabIndex = 0;
+            this.TabGroup.Controls.Add(this.CheckInOut);
+            this.TabGroup.Controls.Add(this.ToolHistory);
+            this.TabGroup.Controls.Add(this.UserHistory);
+            this.TabGroup.Controls.Add(this.Manage);
+            this.TabGroup.Controls.Add(this.Employees);
+            this.TabGroup.Controls.Add(this.Permissions);
+            this.TabGroup.Controls.Add(this.Tools);
+            this.TabGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TabGroup.Location = new System.Drawing.Point(0, 0);
+            this.TabGroup.Multiline = true;
+            this.TabGroup.Name = "TabGroup";
+            this.TabGroup.SelectedIndex = 0;
+            this.TabGroup.Size = new System.Drawing.Size(1135, 764);
+            this.TabGroup.TabIndex = 0;
             // 
             // CheckInOut
             // 
@@ -345,6 +345,14 @@
             this.panel4.Size = new System.Drawing.Size(1121, 150);
             this.panel4.TabIndex = 3;
             // 
+            // TB_EMP_ID1
+            // 
+            this.TB_EMP_ID1.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID1.Name = "TB_EMP_ID1";
+            this.TB_EMP_ID1.ReadOnly = true;
+            this.TB_EMP_ID1.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID1.TabIndex = 13;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -404,6 +412,14 @@
             this.panel3.Size = new System.Drawing.Size(1121, 150);
             this.panel3.TabIndex = 2;
             // 
+            // TB_EMP_ID2
+            // 
+            this.TB_EMP_ID2.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID2.Name = "TB_EMP_ID2";
+            this.TB_EMP_ID2.ReadOnly = true;
+            this.TB_EMP_ID2.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID2.TabIndex = 14;
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -462,6 +478,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1121, 150);
             this.panel2.TabIndex = 1;
+            // 
+            // TB_EMP_ID3
+            // 
+            this.TB_EMP_ID3.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID3.Name = "TB_EMP_ID3";
+            this.TB_EMP_ID3.ReadOnly = true;
+            this.TB_EMP_ID3.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID3.TabIndex = 14;
             // 
             // label17
             // 
@@ -1123,6 +1147,14 @@
             this.panel1.Size = new System.Drawing.Size(1121, 150);
             this.panel1.TabIndex = 0;
             // 
+            // TB_EMP_ID4
+            // 
+            this.TB_EMP_ID4.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID4.Name = "TB_EMP_ID4";
+            this.TB_EMP_ID4.ReadOnly = true;
+            this.TB_EMP_ID4.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID4.TabIndex = 14;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1193,6 +1225,14 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1121, 150);
             this.panel5.TabIndex = 1;
+            // 
+            // TB_EMP_ID5
+            // 
+            this.TB_EMP_ID5.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID5.Name = "TB_EMP_ID5";
+            this.TB_EMP_ID5.ReadOnly = true;
+            this.TB_EMP_ID5.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID5.TabIndex = 14;
             // 
             // label20
             // 
@@ -1266,6 +1306,14 @@
             this.panel7.Size = new System.Drawing.Size(1121, 150);
             this.panel7.TabIndex = 5;
             // 
+            // TB_EMP_ID6
+            // 
+            this.TB_EMP_ID6.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID6.Name = "TB_EMP_ID6";
+            this.TB_EMP_ID6.ReadOnly = true;
+            this.TB_EMP_ID6.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID6.TabIndex = 14;
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -1327,7 +1375,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Maroon;
-            this.panel6.Controls.Add(this.textBox6);
+            this.panel6.Controls.Add(this.TB_EMP_ID7);
             this.panel6.Controls.Add(this.label21);
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Controls.Add(this.label22);
@@ -1336,6 +1384,14 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1121, 150);
             this.panel6.TabIndex = 3;
+            // 
+            // TB_EMP_ID7
+            // 
+            this.TB_EMP_ID7.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID7.Name = "TB_EMP_ID7";
+            this.TB_EMP_ID7.ReadOnly = true;
+            this.TB_EMP_ID7.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID7.TabIndex = 14;
             // 
             // label21
             // 
@@ -1372,66 +1428,17 @@
             this.label22.TabIndex = 0;
             this.label22.Text = "Tools Database";
             // 
-            // TB_EMP_ID1
-            // 
-            this.TB_EMP_ID1.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID1.Name = "TB_EMP_ID1";
-            this.TB_EMP_ID1.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID1.TabIndex = 13;
-            // 
-            // TB_EMP_ID2
-            // 
-            this.TB_EMP_ID2.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID2.Name = "TB_EMP_ID2";
-            this.TB_EMP_ID2.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID2.TabIndex = 14;
-            // 
-            // TB_EMP_ID3
-            // 
-            this.TB_EMP_ID3.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID3.Name = "TB_EMP_ID3";
-            this.TB_EMP_ID3.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID3.TabIndex = 14;
-            // 
-            // TB_EMP_ID4
-            // 
-            this.TB_EMP_ID4.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID4.Name = "TB_EMP_ID4";
-            this.TB_EMP_ID4.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID4.TabIndex = 14;
-            // 
-            // TB_EMP_ID5
-            // 
-            this.TB_EMP_ID5.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID5.Name = "TB_EMP_ID5";
-            this.TB_EMP_ID5.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID5.TabIndex = 14;
-            // 
-            // TB_EMP_ID6
-            // 
-            this.TB_EMP_ID6.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID6.Name = "TB_EMP_ID6";
-            this.TB_EMP_ID6.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID6.TabIndex = 14;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(891, 94);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(211, 35);
-            this.textBox6.TabIndex = 14;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 764);
-            this.Controls.Add(this.TB_EMP_ID7);
+            this.Controls.Add(this.TabGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.TB_EMP_ID7.ResumeLayout(false);
+            this.TabGroup.ResumeLayout(false);
             this.CheckInOut.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -1483,7 +1490,7 @@
 
         #endregion
 
-        private TabControl TB_EMP_ID7;
+        private TabControl TabGroup;
         private TabPage CheckInOut;
         private TabPage ToolHistory;
         private TabPage UserHistory;
@@ -1577,6 +1584,6 @@
         private TextBox TB_EMP_ID4;
         private TextBox TB_EMP_ID5;
         private TextBox TB_EMP_ID6;
-        private TextBox textBox6;
+        private TextBox TB_EMP_ID7;
     }
 }
