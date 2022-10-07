@@ -104,7 +104,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridTools = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -135,7 +135,7 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
@@ -537,6 +537,7 @@
             this.rButtons6.Text = "Remove Tool";
             this.rButtons6.TextColor = System.Drawing.Color.White;
             this.rButtons6.UseVisualStyleBackColor = false;
+            this.rButtons6.Click += new System.EventHandler(this.rButtons6_Click);
             // 
             // label12
             // 
@@ -697,6 +698,7 @@
             this.rButtons4.Text = "Add Tool";
             this.rButtons4.TextColor = System.Drawing.Color.White;
             this.rButtons4.UseVisualStyleBackColor = false;
+            this.rButtons4.Click += new System.EventHandler(this.rButtons4_Click);
             // 
             // label10
             // 
@@ -725,8 +727,8 @@
             "Clamp",
             "Rench",
             "Socket"});
-            this.toolTypeAddTB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.toolTypeAddTB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.toolTypeAddTB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.toolTypeAddTB.FormattingEnabled = true;
             this.toolTypeAddTB.Items.AddRange(new object[] {
             "Hammer",
@@ -1207,7 +1209,7 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.dataGridView1);
+            this.tabPage6.Controls.Add(this.dataGridTools);
             this.tabPage6.Controls.Add(this.panel6);
             this.tabPage6.Location = new System.Drawing.Point(4, 38);
             this.tabPage6.Name = "tabPage6";
@@ -1217,16 +1219,16 @@
             this.tabPage6.Text = "Tools";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridTools
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1121, 566);
-            this.dataGridView1.TabIndex = 4;
+            this.dataGridTools.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridTools.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridTools.Location = new System.Drawing.Point(3, 153);
+            this.dataGridTools.Name = "dataGridTools";
+            this.dataGridTools.RowHeadersWidth = 62;
+            this.dataGridTools.RowTemplate.Height = 33;
+            this.dataGridTools.Size = new System.Drawing.Size(1121, 566);
+            this.dataGridTools.TabIndex = 4;
             // 
             // panel6
             // 
@@ -1322,7 +1324,7 @@
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1403,7 +1405,7 @@
         private Label label21;
         private PictureBox pictureBox6;
         private Label label22;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridTools;
         private CheckBox RT_Tools_CB;
         private CheckBox TH_Tools_CB;
         private CheckBox UHS_Tools_CB;

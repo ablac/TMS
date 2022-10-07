@@ -11,30 +11,12 @@ namespace TMS
         //Cancel Button Add Users
         private void rButtons2_Click(object sender, EventArgs e)
         {
-            empIDAddTB.Text = "";
-            empNameAddTB.Text = "";
-            empPnumAddTB.Text = "";
-            EmpPinAddTB.Text = "";
-            empRemove.Text = "";
-            toolRemove.Text = "";
-            RT_Tools_CB.Checked = false;
-            RU_Tools_CB.Checked = false;
-            AT_Tools_CB.Checked = false;
-            AU_Tools_CB.Checked = false;
-            UH_Tools_CB.Checked = false;
-            TH_Tools_CB.Checked = false;
-            UHS_Tools_CB.Checked = false;
-            THS_Tools_CB.Checked = false;
-            CIT_Tools_CB.Checked = false;
-            COT_Tools_CB.Checked = false;
+            ClearEmp();
         }
         //Cancel Button Add Tools
         private void rButtons3_Click(object sender, EventArgs e)
         {
-            toolIDAddTB.Text = "";
-            toolTypeAddTB.Text = "";
-            empRemove.Text = "";
-            toolRemove.Text = "";
+            ClearTool();
         }
 
         //Close Application Buttons
@@ -64,6 +46,35 @@ namespace TMS
         private void label21_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        //Clear Employee
+        void ClearEmp()
+        {
+            empIDAddTB.Text = "";
+            empNameAddTB.Text = "";
+            empPnumAddTB.Text = "";
+            EmpPinAddTB.Text = "";
+            empRemove.Text = "";
+            toolRemove.Text = "";
+            RT_Tools_CB.Checked = false;
+            RU_Tools_CB.Checked = false;
+            AT_Tools_CB.Checked = false;
+            AU_Tools_CB.Checked = false;
+            UH_Tools_CB.Checked = false;
+            TH_Tools_CB.Checked = false;
+            UHS_Tools_CB.Checked = false;
+            THS_Tools_CB.Checked = false;
+            CIT_Tools_CB.Checked = false;
+            COT_Tools_CB.Checked = false;
+        }
+
+        //Clear Tools
+        void ClearTool()
+        {
+            toolIDAddTB.Text = "";
+            toolTypeAddTB.Text = "";
+            empRemove.Text = "";
+            toolRemove.Text = "";
         }
     }
 }
