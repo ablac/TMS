@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.TB_EMP_ID7 = new System.Windows.Forms.TabControl();
+            this.CheckInOut = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rButtons10 = new Tool_Inventory_System.RButtons();
             this.label13 = new System.Windows.Forms.Label();
@@ -43,17 +43,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ToolHistory = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.UserHistory = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Manage = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.rButtons6 = new Tool_Inventory_System.RButtons();
@@ -97,32 +97,45 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.Employees = new System.Windows.Forms.TabPage();
             this.EmpGridView = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.Permissions = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.Tools = new System.Windows.Forms.TabPage();
             this.dataGridTools = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.TB_EMP_ID1 = new System.Windows.Forms.TextBox();
+            this.TB_EMP_ID2 = new System.Windows.Forms.TextBox();
+            this.TB_EMP_ID3 = new System.Windows.Forms.TextBox();
+            this.TB_EMP_ID4 = new System.Windows.Forms.TextBox();
+            this.TB_EMP_ID5 = new System.Windows.Forms.TextBox();
+            this.TB_EMP_ID6 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.TB_EMP_ID7.SuspendLayout();
+            this.CheckInOut.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.tabPage2.SuspendLayout();
+            this.ToolHistory.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tabPage3.SuspendLayout();
+            this.UserHistory.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.Manage.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -130,45 +143,49 @@
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage5.SuspendLayout();
+            this.Employees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmpGridView)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.Permissions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.Tools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // TB_EMP_ID7
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1135, 764);
-            this.tabControl1.TabIndex = 0;
+            this.TB_EMP_ID7.Controls.Add(this.CheckInOut);
+            this.TB_EMP_ID7.Controls.Add(this.ToolHistory);
+            this.TB_EMP_ID7.Controls.Add(this.UserHistory);
+            this.TB_EMP_ID7.Controls.Add(this.Manage);
+            this.TB_EMP_ID7.Controls.Add(this.Employees);
+            this.TB_EMP_ID7.Controls.Add(this.Permissions);
+            this.TB_EMP_ID7.Controls.Add(this.Tools);
+            this.TB_EMP_ID7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TB_EMP_ID7.Location = new System.Drawing.Point(0, 0);
+            this.TB_EMP_ID7.Multiline = true;
+            this.TB_EMP_ID7.Name = "TB_EMP_ID7";
+            this.TB_EMP_ID7.SelectedIndex = 0;
+            this.TB_EMP_ID7.Size = new System.Drawing.Size(1135, 764);
+            this.TB_EMP_ID7.TabIndex = 0;
             // 
-            // tabPage1
+            // CheckInOut
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.DarkGray;
-            this.tabPage1.Controls.Add(this.groupBox7);
-            this.tabPage1.Controls.Add(this.groupBox6);
-            this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 38);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1127, 722);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Check In/Out";
+            this.CheckInOut.BackColor = System.Drawing.Color.DarkGray;
+            this.CheckInOut.Controls.Add(this.groupBox7);
+            this.CheckInOut.Controls.Add(this.groupBox6);
+            this.CheckInOut.Controls.Add(this.panel4);
+            this.CheckInOut.Location = new System.Drawing.Point(4, 38);
+            this.CheckInOut.Name = "CheckInOut";
+            this.CheckInOut.Padding = new System.Windows.Forms.Padding(3);
+            this.CheckInOut.Size = new System.Drawing.Size(1127, 722);
+            this.CheckInOut.TabIndex = 0;
+            this.CheckInOut.Text = "Check In/Out";
             // 
             // groupBox7
             // 
@@ -318,6 +335,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Purple;
+            this.panel4.Controls.Add(this.TB_EMP_ID1);
             this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.label4);
@@ -362,20 +380,21 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Check Tools In/Out";
             // 
-            // tabPage2
+            // ToolHistory
             // 
-            this.tabPage2.Controls.Add(this.panel3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 38);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1127, 722);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Tool History";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.ToolHistory.Controls.Add(this.panel3);
+            this.ToolHistory.Location = new System.Drawing.Point(4, 38);
+            this.ToolHistory.Name = "ToolHistory";
+            this.ToolHistory.Padding = new System.Windows.Forms.Padding(3);
+            this.ToolHistory.Size = new System.Drawing.Size(1127, 722);
+            this.ToolHistory.TabIndex = 1;
+            this.ToolHistory.Text = "Tool History";
+            this.ToolHistory.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Olive;
+            this.panel3.Controls.Add(this.TB_EMP_ID2);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label3);
@@ -420,20 +439,21 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Tool History Logs";
             // 
-            // tabPage3
+            // UserHistory
             // 
-            this.tabPage3.Controls.Add(this.panel2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 38);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1127, 722);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "User History";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.UserHistory.Controls.Add(this.panel2);
+            this.UserHistory.Location = new System.Drawing.Point(4, 38);
+            this.UserHistory.Name = "UserHistory";
+            this.UserHistory.Padding = new System.Windows.Forms.Padding(3);
+            this.UserHistory.Size = new System.Drawing.Size(1127, 722);
+            this.UserHistory.TabIndex = 2;
+            this.UserHistory.Text = "User History";
+            this.UserHistory.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.TB_EMP_ID3);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label2);
@@ -478,21 +498,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "User History Logs";
             // 
-            // tabPage4
+            // Manage
             // 
-            this.tabPage4.Controls.Add(this.groupBox4);
-            this.tabPage4.Controls.Add(this.groupBox3);
-            this.tabPage4.Controls.Add(this.groupBox2);
-            this.tabPage4.Controls.Add(this.groupBox1);
-            this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabPage4.Location = new System.Drawing.Point(4, 38);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1127, 722);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Manage";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.Manage.Controls.Add(this.groupBox4);
+            this.Manage.Controls.Add(this.groupBox3);
+            this.Manage.Controls.Add(this.groupBox2);
+            this.Manage.Controls.Add(this.groupBox1);
+            this.Manage.Controls.Add(this.panel1);
+            this.Manage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Manage.Location = new System.Drawing.Point(4, 38);
+            this.Manage.Name = "Manage";
+            this.Manage.Padding = new System.Windows.Forms.Padding(3);
+            this.Manage.Size = new System.Drawing.Size(1127, 722);
+            this.Manage.TabIndex = 3;
+            this.Manage.Text = "Manage";
+            this.Manage.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -1093,6 +1113,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.TB_EMP_ID4);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -1137,17 +1158,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Users and Tools";
             // 
-            // tabPage5
+            // Employees
             // 
-            this.tabPage5.Controls.Add(this.EmpGridView);
-            this.tabPage5.Controls.Add(this.panel5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 38);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1127, 722);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Employees";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.Employees.Controls.Add(this.EmpGridView);
+            this.Employees.Controls.Add(this.panel5);
+            this.Employees.Location = new System.Drawing.Point(4, 38);
+            this.Employees.Name = "Employees";
+            this.Employees.Padding = new System.Windows.Forms.Padding(3);
+            this.Employees.Size = new System.Drawing.Size(1127, 722);
+            this.Employees.TabIndex = 4;
+            this.Employees.Text = "Employees";
+            this.Employees.UseVisualStyleBackColor = true;
             // 
             // EmpGridView
             // 
@@ -1163,6 +1184,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Maroon;
+            this.panel5.Controls.Add(this.TB_EMP_ID5);
             this.panel5.Controls.Add(this.label20);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.label19);
@@ -1207,17 +1229,89 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Employees Database";
             // 
-            // tabPage6
+            // Permissions
             // 
-            this.tabPage6.Controls.Add(this.dataGridTools);
-            this.tabPage6.Controls.Add(this.panel6);
-            this.tabPage6.Location = new System.Drawing.Point(4, 38);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1127, 722);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Tools";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.Permissions.AllowDrop = true;
+            this.Permissions.Controls.Add(this.dataGridView1);
+            this.Permissions.Controls.Add(this.panel7);
+            this.Permissions.Location = new System.Drawing.Point(4, 38);
+            this.Permissions.Name = "Permissions";
+            this.Permissions.Padding = new System.Windows.Forms.Padding(3);
+            this.Permissions.Size = new System.Drawing.Size(1127, 722);
+            this.Permissions.TabIndex = 6;
+            this.Permissions.Text = "Permissions";
+            this.Permissions.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 153);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.Size = new System.Drawing.Size(1121, 566);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Maroon;
+            this.panel7.Controls.Add(this.TB_EMP_ID6);
+            this.panel7.Controls.Add(this.label23);
+            this.panel7.Controls.Add(this.pictureBox7);
+            this.panel7.Controls.Add(this.label24);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1121, 150);
+            this.panel7.TabIndex = 5;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(1082, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(39, 37);
+            this.label23.TabIndex = 13;
+            this.label23.Text = "X";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
+            this.pictureBox7.Location = new System.Drawing.Point(21, 25);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(171, 104);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 11;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(257, 25);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(403, 59);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Tools Database";
+            // 
+            // Tools
+            // 
+            this.Tools.Controls.Add(this.dataGridTools);
+            this.Tools.Controls.Add(this.panel6);
+            this.Tools.Location = new System.Drawing.Point(4, 38);
+            this.Tools.Name = "Tools";
+            this.Tools.Padding = new System.Windows.Forms.Padding(3);
+            this.Tools.Size = new System.Drawing.Size(1127, 722);
+            this.Tools.TabIndex = 5;
+            this.Tools.Text = "Tools";
+            this.Tools.UseVisualStyleBackColor = true;
             // 
             // dataGridTools
             // 
@@ -1233,6 +1327,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Maroon;
+            this.panel6.Controls.Add(this.textBox6);
             this.panel6.Controls.Add(this.label21);
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Controls.Add(this.label22);
@@ -1277,18 +1372,67 @@
             this.label22.TabIndex = 0;
             this.label22.Text = "Tools Database";
             // 
+            // TB_EMP_ID1
+            // 
+            this.TB_EMP_ID1.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID1.Name = "TB_EMP_ID1";
+            this.TB_EMP_ID1.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID1.TabIndex = 13;
+            // 
+            // TB_EMP_ID2
+            // 
+            this.TB_EMP_ID2.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID2.Name = "TB_EMP_ID2";
+            this.TB_EMP_ID2.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID2.TabIndex = 14;
+            // 
+            // TB_EMP_ID3
+            // 
+            this.TB_EMP_ID3.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID3.Name = "TB_EMP_ID3";
+            this.TB_EMP_ID3.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID3.TabIndex = 14;
+            // 
+            // TB_EMP_ID4
+            // 
+            this.TB_EMP_ID4.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID4.Name = "TB_EMP_ID4";
+            this.TB_EMP_ID4.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID4.TabIndex = 14;
+            // 
+            // TB_EMP_ID5
+            // 
+            this.TB_EMP_ID5.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID5.Name = "TB_EMP_ID5";
+            this.TB_EMP_ID5.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID5.TabIndex = 14;
+            // 
+            // TB_EMP_ID6
+            // 
+            this.TB_EMP_ID6.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID6.Name = "TB_EMP_ID6";
+            this.TB_EMP_ID6.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID6.TabIndex = 14;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(891, 94);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(211, 35);
+            this.textBox6.TabIndex = 14;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 764);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.TB_EMP_ID7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.TB_EMP_ID7.ResumeLayout(false);
+            this.CheckInOut.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1296,15 +1440,15 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.tabPage2.ResumeLayout(false);
+            this.ToolHistory.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabPage3.ResumeLayout(false);
+            this.UserHistory.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabPage4.ResumeLayout(false);
+            this.Manage.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1318,12 +1462,17 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage5.ResumeLayout(false);
+            this.Employees.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EmpGridView)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.tabPage6.ResumeLayout(false);
+            this.Permissions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.Tools.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -1334,11 +1483,11 @@
 
         #endregion
 
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
-        private TabPage tabPage4;
+        private TabControl TB_EMP_ID7;
+        private TabPage CheckInOut;
+        private TabPage ToolHistory;
+        private TabPage UserHistory;
+        private TabPage Manage;
         private Panel panel1;
         private Label label1;
         private PictureBox pictureBox1;
@@ -1394,13 +1543,13 @@
         private Label label16;
         private Label label17;
         private Label label18;
-        private TabPage tabPage5;
+        private TabPage Employees;
         private DataGridView EmpGridView;
         private Panel panel5;
         private Label label20;
         private PictureBox pictureBox5;
         private Label label19;
-        private TabPage tabPage6;
+        private TabPage Tools;
         private Panel panel6;
         private Label label21;
         private PictureBox pictureBox6;
@@ -1416,5 +1565,18 @@
         private CheckBox AU_Tools_CB;
         private CheckBox AT_Tools_CB;
         private CheckBox UH_Tools_CB;
+        private TabPage Permissions;
+        private DataGridView dataGridView1;
+        private Panel panel7;
+        private Label label23;
+        private PictureBox pictureBox7;
+        private Label label24;
+        private TextBox TB_EMP_ID1;
+        private TextBox TB_EMP_ID2;
+        private TextBox TB_EMP_ID3;
+        private TextBox TB_EMP_ID4;
+        private TextBox TB_EMP_ID5;
+        private TextBox TB_EMP_ID6;
+        private TextBox textBox6;
     }
 }

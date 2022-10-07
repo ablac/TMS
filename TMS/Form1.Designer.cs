@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rButtons2 = new Tool_Inventory_System.RButtons();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -37,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.empPinTB = new TMS.Contols.TBox();
             this.empIdTB = new TMS.Contols.TBox();
-            this.rButtons2 = new Tool_Inventory_System.RButtons();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 438);
             this.panel1.TabIndex = 0;
+            // 
+            // rButtons2
+            // 
+            this.rButtons2.BackColor = System.Drawing.Color.Maroon;
+            this.rButtons2.BackgroundColor = System.Drawing.Color.Maroon;
+            this.rButtons2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rButtons2.BorderRadius = 40;
+            this.rButtons2.BorderSize = 2;
+            this.rButtons2.FlatAppearance.BorderSize = 0;
+            this.rButtons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons2.ForeColor = System.Drawing.Color.White;
+            this.rButtons2.Location = new System.Drawing.Point(199, 339);
+            this.rButtons2.Name = "rButtons2";
+            this.rButtons2.Size = new System.Drawing.Size(157, 54);
+            this.rButtons2.TabIndex = 11;
+            this.rButtons2.Text = "Cancel";
+            this.rButtons2.TextColor = System.Drawing.Color.White;
+            this.rButtons2.UseVisualStyleBackColor = false;
+            this.rButtons2.Click += new System.EventHandler(this.rButtons2_Click);
             // 
             // pictureBox1
             // 
@@ -111,6 +131,7 @@
             this.rButtons1.Text = "Login";
             this.rButtons1.TextColor = System.Drawing.Color.White;
             this.rButtons1.UseVisualStyleBackColor = false;
+            this.rButtons1.Click += new System.EventHandler(this.rButtons1_Click);
             // 
             // label3
             // 
@@ -169,26 +190,6 @@
             this.empIdTB.Size = new System.Drawing.Size(323, 40);
             this.empIdTB.TabIndex = 2;
             this.empIdTB.UnderlinedStyle = true;
-            // 
-            // rButtons2
-            // 
-            this.rButtons2.BackColor = System.Drawing.Color.Maroon;
-            this.rButtons2.BackgroundColor = System.Drawing.Color.Maroon;
-            this.rButtons2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rButtons2.BorderRadius = 40;
-            this.rButtons2.BorderSize = 2;
-            this.rButtons2.FlatAppearance.BorderSize = 0;
-            this.rButtons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons2.ForeColor = System.Drawing.Color.White;
-            this.rButtons2.Location = new System.Drawing.Point(199, 339);
-            this.rButtons2.Name = "rButtons2";
-            this.rButtons2.Size = new System.Drawing.Size(157, 54);
-            this.rButtons2.TabIndex = 11;
-            this.rButtons2.Text = "Cancel";
-            this.rButtons2.TextColor = System.Drawing.Color.White;
-            this.rButtons2.UseVisualStyleBackColor = false;
-            this.rButtons2.Click += new System.EventHandler(this.rButtons2_Click);
             // 
             // Form1
             // 

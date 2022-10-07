@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace TMS
 {
     public partial class Form2 : Form
@@ -20,10 +21,20 @@ namespace TMS
             InitializeComponent();
             PopEmp();
             PopTools();
+            String Message = "Employee ID: " + Global.Emp_ID;
+            TB_EMP_ID1.Text = Message;
+            TB_EMP_ID2.Text = Message;
+            TB_EMP_ID3.Text = Message;
+            TB_EMP_ID4.Text = Message;
+            TB_EMP_ID5.Text = Message;
+            TB_EMP_ID6.Text = Message;
+            TB_EMP_ID7.Text = Message;
         }
         
         //Create SQL Connection
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Keith\source\repos\TMS\TMS\Database\TMS.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Global.Database + ";Integrated Security=True;Connect Timeout=30");
+
+        //********UPDATES********
 
         //Reload User List 
         void PopEmp()
@@ -67,7 +78,9 @@ namespace TMS
             }
         }
 
-        //Add User Button
+        //********EMPLOYEES********
+
+        //Add Employee Button
         private void add_User_Click(object sender, EventArgs e)
         {
             try
@@ -76,11 +89,9 @@ namespace TMS
                 Con.Open();
                 SqlCommand cmd = new SqlCommand("insert into Employees values('" + empIDAddTB.Text + "','" + EmpPinAddTB.Text + "', '" + empNameAddTB.Text + "','" + empPnumAddTB.Text + "')", Con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Employees Successfully Added");
                 Con.Close();
                 //Reloead User List
-                PopEmp();
-                ClearEmp();
+                UpdatePerms();
             }
             catch
             {
@@ -102,13 +113,12 @@ namespace TMS
                 string myquery = "delete from Employees where Emp_ID='" + empRemove.Text + "'";
                 SqlCommand cmd = new SqlCommand(myquery, Con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Employee " + empRemove.Text + " successfully removed!");
                 Con.Close();
-                empRemove.Text = "";
-                PopEmp();
-                ClearEmp();
+                RemovePermissions();
             }
         }
+
+        //********TOOLS********
 
         //Add Tool to Database
         private void rButtons4_Click(object sender, EventArgs e)
@@ -151,6 +161,45 @@ namespace TMS
                 PopTools();
                 ClearTool();
             }
+        }
+
+        //********PERMISSIONS********
+
+        //Update Permissions
+        void UpdatePerms()
+        {
+            try
+            {
+                //Open SQL and Save User
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("insert into Permissions values('" + empIDAddTB.Text + "','" + (COT_Tools_CB.Checked).ToString() + "','" + (CIT_Tools_CB.Checked).ToString() 
+                    + "','" + (THS_Tools_CB.Checked).ToString() + "','" + (UHS_Tools_CB.Checked).ToString() + "','" + (TH_Tools_CB.Checked).ToString() + "','" + (UH_Tools_CB.Checked).ToString() 
+                    + "','" + (AU_Tools_CB.Checked).ToString() + "','" + (AT_Tools_CB.Checked).ToString() + "','" + (RU_Tools_CB.Checked).ToString() + "','" + (RT_Tools_CB.Checked).ToString() 
+                    + "')", Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Employee Added Successfully");
+                Con.Close();
+                //Reloead User List
+                PopEmp();
+                ClearEmp();
+            }
+            catch
+            {
+
+            }
+        }
+        void RemovePermissions()
+        {
+            //Delete User from SQL
+            Con.Open();
+            string myquery = "delete from Permissions where Emp_ID='" + empRemove.Text + "'";
+            SqlCommand cmd = new SqlCommand(myquery, Con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Employee " + empRemove.Text + " successfully removed!");
+            Con.Close();
+            empRemove.Text = "";
+            PopEmp();
+            ClearEmp();
         }
     }
 }

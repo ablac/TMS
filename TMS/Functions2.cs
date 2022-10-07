@@ -47,6 +47,10 @@ namespace TMS
         {
             Application.Exit();
         }
+        private void label23_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         //Clear Employee
         void ClearEmp()
         {
