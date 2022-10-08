@@ -8,17 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using TMS.Contols;
 
 namespace TMS
 {
-    public partial class Form1 : Form
+    public partial class Login_Form : Form
     {
-        public Form1()
+        public Login_Form()
         {
             InitializeComponent();
         }
         //Create SQL Connection
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Global.Database + ";Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=" + Settings.Source + ";AttachDbFilename=" + Settings.Database + ";Integrated Security=" + Settings.Security + ";Connect Timeout=" + Settings.Timeout);
 
         //Hide or Show Password.
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -46,22 +47,33 @@ namespace TMS
         private void rButtons1_Click(object sender, EventArgs e)
         {
             Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) from Employees where Emp_ID = '" + empIdTB.Text + "' and Emp_Pin = '" + empPinTB.Text + "'",Con);
+            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) from Employees where Emp_ID = '" + empIdTB.Text + "' and Emp_Pin = '" + empPinTB.Text + "'", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (Settings.Verify_Login == true)
             {
-                Global.Emp_ID = empIdTB.Text;
-                Form2 form2 = new Form2();
-                form2.Show();
-                this.Hide();
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    Login();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Employee ID or Employee Pin");
+                    empPinTB.Text = "";
+                }
+                Con.Close();
             }
             else
             {
-                MessageBox.Show("Wrong Employee ID or Employee Pin");
-                empPinTB.Text = "";
+                Login();
             }
-            Con.Close();
+        }
+        void Login()
+        {
+            Settings.Emp_ID = empIdTB.Text;
+            Main_Form form2 = new Main_Form();
+            form2.Show();
+            this.Hide();
         }
     }
 }

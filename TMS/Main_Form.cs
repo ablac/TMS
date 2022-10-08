@@ -10,19 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using TMS.Contols;
 
 namespace TMS
 {
-    public partial class Form2 : Form
+    public partial class Main_Form : Form
     {
-        public Form2()
+        public Main_Form()
         {
             InitializeComponent();
             PopEmp();
             PopPerm();
             PopTools();
-            String Message = "Employee ID: " + Global.Emp_ID;
+            String Message = "Employee ID: " + Settings.Emp_ID;
             TB_EMP_ID1.Text = Message;
             TB_EMP_ID2.Text = Message;
             TB_EMP_ID3.Text = Message;
@@ -31,9 +31,9 @@ namespace TMS
             TB_EMP_ID6.Text = Message;
             TB_EMP_ID7.Text = Message;
         }
-        
+
         //Create SQL Connection
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Global.Database + ";Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=" + Settings.Source + ";AttachDbFilename=" + Settings.Database + ";Integrated Security=" + Settings.Security + ";Connect Timeout=" + Settings.Timeout);
 
         //********UPDATES********
 

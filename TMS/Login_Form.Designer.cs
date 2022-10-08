@@ -1,6 +1,6 @@
 ﻿namespace TMS
 {
-    partial class Form1
+    partial class Login_Form
     {
         /// <summary>
         ///  Required designer variable.

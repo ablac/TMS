@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TMS
 {
-    public partial class Form2
+    public partial class Main_Form
     {
         //Cancel Button Add Users
         private void rButtons2_Click(object sender, EventArgs e)
