@@ -30,7 +30,10 @@ namespace TMS
             TB_EMP_ID5.Text = Message;
             TB_EMP_ID6.Text = Message;
             TB_EMP_ID7.Text = Message;
+
+            
         }
+
 
         //Create SQL Connection
         SqlConnection Con = new SqlConnection(@"Data Source=" + Settings.Source + ";AttachDbFilename=" + Settings.Database + ";Integrated Security=" + Settings.Security + ";Connect Timeout=" + Settings.Timeout);
@@ -54,7 +57,6 @@ namespace TMS
             }
             catch
             {
-
             }
         }
         //Reload Permissions List 
@@ -73,7 +75,6 @@ namespace TMS
             }
             catch
             {
-
             }
         }
 
@@ -94,7 +95,6 @@ namespace TMS
             }
             catch
             {
-
             }
         }
 
@@ -115,7 +115,6 @@ namespace TMS
             }
             catch
             {
-
             }
         }
 
@@ -123,9 +122,7 @@ namespace TMS
         private void rButtons5_Click(object sender, EventArgs e)
         {
             if (empRemove.Text == "")
-            {
                 MessageBox.Show("Enter Employee ID Number");
-            }
             else
             {
                 //Delete User from SQL
@@ -157,7 +154,6 @@ namespace TMS
             }
             catch
             {
-
             }
         }
 
@@ -165,9 +161,7 @@ namespace TMS
         private void rButtons6_Click(object sender, EventArgs e)
         {
             if (toolRemove.Text == "")
-            {
                 MessageBox.Show("Enter Tool ID Number");
-            }
             else
             {
                 //Delete User from SQL
@@ -206,7 +200,6 @@ namespace TMS
             }
             catch
             {
-
             }
         }
         void RemovePermissions()

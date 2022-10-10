@@ -1428,14 +1428,14 @@
             this.label22.TabIndex = 0;
             this.label22.Text = "Tools Database";
             // 
-            // Form2
+            // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 764);
             this.Controls.Add(this.TabGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "Main_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.TabGroup.ResumeLayout(false);

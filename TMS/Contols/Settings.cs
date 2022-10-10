@@ -14,11 +14,12 @@ namespace TMS.Contols
         public static string Source = "(LocalDB)\\MSSQLLocalDB";
         public static string Timeout = "30";
 
-        //Verify Login used for Easy Database debugging
+        //Verify User information
         public static Boolean Verify_Login = true;
+        public static Boolean Verify_Permissions = true;
 
         //Do not change
-        public static string Emp_ID; 
+        public static int Emp_ID; 
 
     }
 }
