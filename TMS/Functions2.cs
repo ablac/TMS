@@ -30,11 +30,6 @@ namespace TMS
             Application.Exit();
         }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void label18_Click(object sender, EventArgs e)
         {
             Application.Exit();

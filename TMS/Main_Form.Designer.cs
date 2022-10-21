@@ -28,34 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TabGroup = new System.Windows.Forms.TabControl();
-            this.CheckInOut = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.rButtons10 = new Tool_Inventory_System.RButtons();
-            this.label13 = new System.Windows.Forms.Label();
-            this.ToolIDIn = new TMS.Contols.TBox();
-            this.rButtons9 = new Tool_Inventory_System.RButtons();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.toolIDOut = new TMS.Contols.TBox();
-            this.rButtons8 = new Tool_Inventory_System.RButtons();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.TB_EMP_ID1 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ToolHistory = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.TB_EMP_ID2 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.UserHistory = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.TB_EMP_ID3 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Tools = new System.Windows.Forms.TabPage();
+            this.dataGridTools = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID7 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Permissions = new System.Windows.Forms.TabPage();
+            this.PermGridView = new System.Windows.Forms.DataGridView();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID6 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.Employees = new System.Windows.Forms.TabPage();
+            this.EmpGridView = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID5 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.Manage = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -101,40 +95,37 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Employees = new System.Windows.Forms.TabPage();
-            this.EmpGridView = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.TB_EMP_ID5 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.Permissions = new System.Windows.Forms.TabPage();
-            this.PermGridView = new System.Windows.Forms.DataGridView();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.TB_EMP_ID6 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.Tools = new System.Windows.Forms.TabPage();
-            this.dataGridTools = new System.Windows.Forms.DataGridView();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.TB_EMP_ID7 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.TabGroup.SuspendLayout();
-            this.CheckInOut.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.ToolHistory.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.UserHistory.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.History = new System.Windows.Forms.TabPage();
+            this.historyView = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID2 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CheckInOut = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.rButtons10 = new Tool_Inventory_System.RButtons();
+            this.label14 = new System.Windows.Forms.Label();
+            this.toolIDMain = new TMS.Contols.TBox();
+            this.rButtons8 = new Tool_Inventory_System.RButtons();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.TB_EMP_ID1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TabGroup = new System.Windows.Forms.TabControl();
+            this.Tools.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.Permissions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PermGridView)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.Employees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpGridView)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Manage.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -143,384 +134,254 @@
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.Employees.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmpGridView)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.Permissions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PermGridView)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.Tools.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.History.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.historyView)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.CheckInOut.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.TabGroup.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TabGroup
+            // Tools
             // 
-            this.TabGroup.Controls.Add(this.CheckInOut);
-            this.TabGroup.Controls.Add(this.ToolHistory);
-            this.TabGroup.Controls.Add(this.UserHistory);
-            this.TabGroup.Controls.Add(this.Manage);
-            this.TabGroup.Controls.Add(this.Employees);
-            this.TabGroup.Controls.Add(this.Permissions);
-            this.TabGroup.Controls.Add(this.Tools);
-            this.TabGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TabGroup.Location = new System.Drawing.Point(0, 0);
-            this.TabGroup.Multiline = true;
-            this.TabGroup.Name = "TabGroup";
-            this.TabGroup.SelectedIndex = 0;
-            this.TabGroup.Size = new System.Drawing.Size(1135, 764);
-            this.TabGroup.TabIndex = 0;
+            this.Tools.Controls.Add(this.dataGridTools);
+            this.Tools.Controls.Add(this.panel6);
+            this.Tools.Location = new System.Drawing.Point(4, 38);
+            this.Tools.Name = "Tools";
+            this.Tools.Padding = new System.Windows.Forms.Padding(3);
+            this.Tools.Size = new System.Drawing.Size(1127, 722);
+            this.Tools.TabIndex = 5;
+            this.Tools.Text = "Tools";
+            this.Tools.UseVisualStyleBackColor = true;
             // 
-            // CheckInOut
+            // dataGridTools
             // 
-            this.CheckInOut.BackColor = System.Drawing.Color.DarkGray;
-            this.CheckInOut.Controls.Add(this.groupBox7);
-            this.CheckInOut.Controls.Add(this.groupBox6);
-            this.CheckInOut.Controls.Add(this.panel4);
-            this.CheckInOut.Location = new System.Drawing.Point(4, 38);
-            this.CheckInOut.Name = "CheckInOut";
-            this.CheckInOut.Padding = new System.Windows.Forms.Padding(3);
-            this.CheckInOut.Size = new System.Drawing.Size(1127, 722);
-            this.CheckInOut.TabIndex = 0;
-            this.CheckInOut.Text = "Check In/Out";
+            this.dataGridTools.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridTools.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridTools.Location = new System.Drawing.Point(3, 153);
+            this.dataGridTools.Name = "dataGridTools";
+            this.dataGridTools.RowHeadersWidth = 62;
+            this.dataGridTools.RowTemplate.Height = 33;
+            this.dataGridTools.Size = new System.Drawing.Size(1121, 566);
+            this.dataGridTools.TabIndex = 4;
             // 
-            // groupBox7
+            // panel6
             // 
-            this.groupBox7.Controls.Add(this.rButtons10);
-            this.groupBox7.Controls.Add(this.label13);
-            this.groupBox7.Controls.Add(this.ToolIDIn);
-            this.groupBox7.Controls.Add(this.rButtons9);
-            this.groupBox7.Location = new System.Drawing.Point(673, 181);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(432, 292);
-            this.groupBox7.TabIndex = 17;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Check In";
+            this.panel6.BackColor = System.Drawing.Color.Maroon;
+            this.panel6.Controls.Add(this.TB_EMP_ID7);
+            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1121, 150);
+            this.panel6.TabIndex = 3;
             // 
-            // rButtons10
+            // TB_EMP_ID7
             // 
-            this.rButtons10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.rButtons10.BackColor = System.Drawing.Color.Green;
-            this.rButtons10.BackgroundColor = System.Drawing.Color.Green;
-            this.rButtons10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.rButtons10.BorderRadius = 40;
-            this.rButtons10.BorderSize = 2;
-            this.rButtons10.FlatAppearance.BorderSize = 0;
-            this.rButtons10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons10.ForeColor = System.Drawing.Color.White;
-            this.rButtons10.Location = new System.Drawing.Point(41, 180);
-            this.rButtons10.Name = "rButtons10";
-            this.rButtons10.Size = new System.Drawing.Size(357, 57);
-            this.rButtons10.TabIndex = 15;
-            this.rButtons10.Text = "Check Out";
-            this.rButtons10.TextColor = System.Drawing.Color.White;
-            this.rButtons10.UseVisualStyleBackColor = false;
+            this.TB_EMP_ID7.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID7.Name = "TB_EMP_ID7";
+            this.TB_EMP_ID7.ReadOnly = true;
+            this.TB_EMP_ID7.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID7.TabIndex = 14;
             // 
-            // label13
+            // label21
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(16, 112);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 25);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Tool ID";
+            this.label21.AutoSize = true;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(1082, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(39, 37);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "X";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
-            // ToolIDIn
+            // pictureBox6
             // 
-            this.ToolIDIn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ToolIDIn.BackColor = System.Drawing.Color.DarkGray;
-            this.ToolIDIn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ToolIDIn.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ToolIDIn.BorderSize = 5;
-            this.ToolIDIn.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ToolIDIn.ForeColor = System.Drawing.Color.DimGray;
-            this.ToolIDIn.Location = new System.Drawing.Point(16, 68);
-            this.ToolIDIn.Margin = new System.Windows.Forms.Padding(4);
-            this.ToolIDIn.Multiline = false;
-            this.ToolIDIn.Name = "ToolIDIn";
-            this.ToolIDIn.Padding = new System.Windows.Forms.Padding(7);
-            this.ToolIDIn.PasswordChar = false;
-            this.ToolIDIn.Size = new System.Drawing.Size(409, 40);
-            this.ToolIDIn.TabIndex = 7;
-            this.ToolIDIn.UnderlinedStyle = true;
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
+            this.pictureBox6.Location = new System.Drawing.Point(21, 25);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(171, 104);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
             // 
-            // rButtons9
+            // label22
             // 
-            this.rButtons9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.rButtons9.BackColor = System.Drawing.Color.Green;
-            this.rButtons9.BackgroundColor = System.Drawing.Color.Green;
-            this.rButtons9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.rButtons9.BorderRadius = 30;
-            this.rButtons9.BorderSize = 2;
-            this.rButtons9.FlatAppearance.BorderSize = 0;
-            this.rButtons9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons9.ForeColor = System.Drawing.Color.White;
-            this.rButtons9.Location = new System.Drawing.Point(27, 298);
-            this.rButtons9.Name = "rButtons9";
-            this.rButtons9.Size = new System.Drawing.Size(537, 57);
-            this.rButtons9.TabIndex = 14;
-            this.rButtons9.Text = "Check Out";
-            this.rButtons9.TextColor = System.Drawing.Color.White;
-            this.rButtons9.UseVisualStyleBackColor = false;
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(257, 25);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(403, 59);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Tools Database";
             // 
-            // groupBox6
+            // Permissions
             // 
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.toolIDOut);
-            this.groupBox6.Controls.Add(this.rButtons8);
-            this.groupBox6.Location = new System.Drawing.Point(24, 181);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(432, 292);
-            this.groupBox6.TabIndex = 16;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Check Out";
+            this.Permissions.AllowDrop = true;
+            this.Permissions.Controls.Add(this.PermGridView);
+            this.Permissions.Controls.Add(this.panel7);
+            this.Permissions.Location = new System.Drawing.Point(4, 38);
+            this.Permissions.Name = "Permissions";
+            this.Permissions.Padding = new System.Windows.Forms.Padding(3);
+            this.Permissions.Size = new System.Drawing.Size(1127, 722);
+            this.Permissions.TabIndex = 6;
+            this.Permissions.Text = "Permissions";
+            this.Permissions.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // PermGridView
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(16, 112);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 25);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Tool ID";
+            this.PermGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PermGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PermGridView.Location = new System.Drawing.Point(3, 153);
+            this.PermGridView.Name = "PermGridView";
+            this.PermGridView.RowHeadersWidth = 62;
+            this.PermGridView.RowTemplate.Height = 33;
+            this.PermGridView.Size = new System.Drawing.Size(1121, 566);
+            this.PermGridView.TabIndex = 6;
             // 
-            // toolIDOut
+            // panel7
             // 
-            this.toolIDOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.toolIDOut.BackColor = System.Drawing.Color.DarkGray;
-            this.toolIDOut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.toolIDOut.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.toolIDOut.BorderSize = 5;
-            this.toolIDOut.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.toolIDOut.ForeColor = System.Drawing.Color.DimGray;
-            this.toolIDOut.Location = new System.Drawing.Point(16, 68);
-            this.toolIDOut.Margin = new System.Windows.Forms.Padding(4);
-            this.toolIDOut.Multiline = false;
-            this.toolIDOut.Name = "toolIDOut";
-            this.toolIDOut.Padding = new System.Windows.Forms.Padding(7);
-            this.toolIDOut.PasswordChar = false;
-            this.toolIDOut.Size = new System.Drawing.Size(409, 40);
-            this.toolIDOut.TabIndex = 7;
-            this.toolIDOut.UnderlinedStyle = true;
+            this.panel7.BackColor = System.Drawing.Color.Maroon;
+            this.panel7.Controls.Add(this.TB_EMP_ID6);
+            this.panel7.Controls.Add(this.label23);
+            this.panel7.Controls.Add(this.pictureBox7);
+            this.panel7.Controls.Add(this.label24);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1121, 150);
+            this.panel7.TabIndex = 5;
             // 
-            // rButtons8
+            // TB_EMP_ID6
             // 
-            this.rButtons8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.rButtons8.BackColor = System.Drawing.Color.Green;
-            this.rButtons8.BackgroundColor = System.Drawing.Color.Green;
-            this.rButtons8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.rButtons8.BorderRadius = 40;
-            this.rButtons8.BorderSize = 2;
-            this.rButtons8.FlatAppearance.BorderSize = 0;
-            this.rButtons8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rButtons8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rButtons8.ForeColor = System.Drawing.Color.White;
-            this.rButtons8.Location = new System.Drawing.Point(34, 180);
-            this.rButtons8.Name = "rButtons8";
-            this.rButtons8.Size = new System.Drawing.Size(357, 57);
-            this.rButtons8.TabIndex = 14;
-            this.rButtons8.Text = "Check Out";
-            this.rButtons8.TextColor = System.Drawing.Color.White;
-            this.rButtons8.UseVisualStyleBackColor = false;
+            this.TB_EMP_ID6.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID6.Name = "TB_EMP_ID6";
+            this.TB_EMP_ID6.ReadOnly = true;
+            this.TB_EMP_ID6.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID6.TabIndex = 14;
             // 
-            // panel4
+            // label23
             // 
-            this.panel4.BackColor = System.Drawing.Color.Purple;
-            this.panel4.Controls.Add(this.TB_EMP_ID1);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1121, 150);
-            this.panel4.TabIndex = 3;
+            this.label23.AutoSize = true;
+            this.label23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(1082, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(39, 37);
+            this.label23.TabIndex = 13;
+            this.label23.Text = "X";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
-            // TB_EMP_ID1
+            // pictureBox7
             // 
-            this.TB_EMP_ID1.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID1.Name = "TB_EMP_ID1";
-            this.TB_EMP_ID1.ReadOnly = true;
-            this.TB_EMP_ID1.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID1.TabIndex = 13;
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
+            this.pictureBox7.Location = new System.Drawing.Point(21, 25);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(171, 104);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 11;
+            this.pictureBox7.TabStop = false;
             // 
-            // label15
+            // label24
             // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(1082, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(39, 37);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "X";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(257, 25);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(564, 59);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Permissions Database";
             // 
-            // pictureBox4
+            // Employees
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
-            this.pictureBox4.Location = new System.Drawing.Point(21, 25);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(171, 104);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
+            this.Employees.Controls.Add(this.EmpGridView);
+            this.Employees.Controls.Add(this.panel5);
+            this.Employees.Location = new System.Drawing.Point(4, 38);
+            this.Employees.Name = "Employees";
+            this.Employees.Padding = new System.Windows.Forms.Padding(3);
+            this.Employees.Size = new System.Drawing.Size(1127, 722);
+            this.Employees.TabIndex = 4;
+            this.Employees.Text = "Employees";
+            this.Employees.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // EmpGridView
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(257, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(486, 59);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Check Tools In/Out";
+            this.EmpGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmpGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmpGridView.Location = new System.Drawing.Point(3, 153);
+            this.EmpGridView.Name = "EmpGridView";
+            this.EmpGridView.RowHeadersWidth = 62;
+            this.EmpGridView.RowTemplate.Height = 33;
+            this.EmpGridView.Size = new System.Drawing.Size(1121, 566);
+            this.EmpGridView.TabIndex = 2;
             // 
-            // ToolHistory
+            // panel5
             // 
-            this.ToolHistory.Controls.Add(this.panel3);
-            this.ToolHistory.Location = new System.Drawing.Point(4, 38);
-            this.ToolHistory.Name = "ToolHistory";
-            this.ToolHistory.Padding = new System.Windows.Forms.Padding(3);
-            this.ToolHistory.Size = new System.Drawing.Size(1127, 722);
-            this.ToolHistory.TabIndex = 1;
-            this.ToolHistory.Text = "Tool History";
-            this.ToolHistory.UseVisualStyleBackColor = true;
+            this.panel5.BackColor = System.Drawing.Color.Maroon;
+            this.panel5.Controls.Add(this.TB_EMP_ID5);
+            this.panel5.Controls.Add(this.label20);
+            this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1121, 150);
+            this.panel5.TabIndex = 1;
             // 
-            // panel3
+            // TB_EMP_ID5
             // 
-            this.panel3.BackColor = System.Drawing.Color.Olive;
-            this.panel3.Controls.Add(this.TB_EMP_ID2);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1121, 150);
-            this.panel3.TabIndex = 2;
+            this.TB_EMP_ID5.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID5.Name = "TB_EMP_ID5";
+            this.TB_EMP_ID5.ReadOnly = true;
+            this.TB_EMP_ID5.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID5.TabIndex = 14;
             // 
-            // TB_EMP_ID2
+            // label20
             // 
-            this.TB_EMP_ID2.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID2.Name = "TB_EMP_ID2";
-            this.TB_EMP_ID2.ReadOnly = true;
-            this.TB_EMP_ID2.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID2.TabIndex = 14;
+            this.label20.AutoSize = true;
+            this.label20.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(1082, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(39, 37);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "X";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
-            // label16
+            // pictureBox5
             // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(1082, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(39, 37);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "X";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
+            this.pictureBox5.Location = new System.Drawing.Point(21, 25);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(171, 104);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
             // 
-            // pictureBox3
+            // label19
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 25);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(171, 104);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(257, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(445, 59);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tool History Logs";
-            // 
-            // UserHistory
-            // 
-            this.UserHistory.Controls.Add(this.panel2);
-            this.UserHistory.Location = new System.Drawing.Point(4, 38);
-            this.UserHistory.Name = "UserHistory";
-            this.UserHistory.Padding = new System.Windows.Forms.Padding(3);
-            this.UserHistory.Size = new System.Drawing.Size(1127, 722);
-            this.UserHistory.TabIndex = 2;
-            this.UserHistory.Text = "User History";
-            this.UserHistory.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.TB_EMP_ID3);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1121, 150);
-            this.panel2.TabIndex = 1;
-            // 
-            // TB_EMP_ID3
-            // 
-            this.TB_EMP_ID3.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID3.Name = "TB_EMP_ID3";
-            this.TB_EMP_ID3.ReadOnly = true;
-            this.TB_EMP_ID3.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID3.TabIndex = 14;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(1082, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(39, 37);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "X";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(171, 104);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(257, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(454, 59);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "User History Logs";
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(257, 25);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(537, 59);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Employees Database";
             // 
             // Manage
             // 
@@ -1190,243 +1051,252 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Users and Tools";
             // 
-            // Employees
+            // History
             // 
-            this.Employees.Controls.Add(this.EmpGridView);
-            this.Employees.Controls.Add(this.panel5);
-            this.Employees.Location = new System.Drawing.Point(4, 38);
-            this.Employees.Name = "Employees";
-            this.Employees.Padding = new System.Windows.Forms.Padding(3);
-            this.Employees.Size = new System.Drawing.Size(1127, 722);
-            this.Employees.TabIndex = 4;
-            this.Employees.Text = "Employees";
-            this.Employees.UseVisualStyleBackColor = true;
+            this.History.Controls.Add(this.historyView);
+            this.History.Controls.Add(this.panel3);
+            this.History.Location = new System.Drawing.Point(4, 38);
+            this.History.Name = "History";
+            this.History.Padding = new System.Windows.Forms.Padding(3);
+            this.History.Size = new System.Drawing.Size(1127, 722);
+            this.History.TabIndex = 1;
+            this.History.Text = "History";
+            this.History.UseVisualStyleBackColor = true;
             // 
-            // EmpGridView
+            // historyView
             // 
-            this.EmpGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.EmpGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmpGridView.Location = new System.Drawing.Point(3, 153);
-            this.EmpGridView.Name = "EmpGridView";
-            this.EmpGridView.RowHeadersWidth = 62;
-            this.EmpGridView.RowTemplate.Height = 33;
-            this.EmpGridView.Size = new System.Drawing.Size(1121, 566);
-            this.EmpGridView.TabIndex = 2;
+            this.historyView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.historyView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.historyView.Location = new System.Drawing.Point(3, 153);
+            this.historyView.Name = "historyView";
+            this.historyView.RowHeadersWidth = 62;
+            this.historyView.RowTemplate.Height = 33;
+            this.historyView.Size = new System.Drawing.Size(1121, 566);
+            this.historyView.TabIndex = 3;
             // 
-            // panel5
+            // panel3
             // 
-            this.panel5.BackColor = System.Drawing.Color.Maroon;
-            this.panel5.Controls.Add(this.TB_EMP_ID5);
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(3, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1121, 150);
-            this.panel5.TabIndex = 1;
+            this.panel3.BackColor = System.Drawing.Color.Olive;
+            this.panel3.Controls.Add(this.TB_EMP_ID2);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1121, 150);
+            this.panel3.TabIndex = 2;
             // 
-            // TB_EMP_ID5
+            // TB_EMP_ID2
             // 
-            this.TB_EMP_ID5.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID5.Name = "TB_EMP_ID5";
-            this.TB_EMP_ID5.ReadOnly = true;
-            this.TB_EMP_ID5.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID5.TabIndex = 14;
+            this.TB_EMP_ID2.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID2.Name = "TB_EMP_ID2";
+            this.TB_EMP_ID2.ReadOnly = true;
+            this.TB_EMP_ID2.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID2.TabIndex = 14;
             // 
-            // label20
+            // label16
             // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(1082, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(39, 37);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "X";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(1082, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 37);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "X";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
-            // pictureBox5
+            // pictureBox3
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
-            this.pictureBox5.Location = new System.Drawing.Point(21, 25);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(171, 104);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
+            this.pictureBox3.Location = new System.Drawing.Point(21, 25);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(171, 104);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
             // 
-            // label19
+            // label3
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(257, 25);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(537, 59);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Employees Database";
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(257, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(325, 59);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "History Logs";
             // 
-            // Permissions
+            // CheckInOut
             // 
-            this.Permissions.AllowDrop = true;
-            this.Permissions.Controls.Add(this.PermGridView);
-            this.Permissions.Controls.Add(this.panel7);
-            this.Permissions.Location = new System.Drawing.Point(4, 38);
-            this.Permissions.Name = "Permissions";
-            this.Permissions.Padding = new System.Windows.Forms.Padding(3);
-            this.Permissions.Size = new System.Drawing.Size(1127, 722);
-            this.Permissions.TabIndex = 6;
-            this.Permissions.Text = "Permissions";
-            this.Permissions.UseVisualStyleBackColor = true;
+            this.CheckInOut.BackColor = System.Drawing.Color.DarkGray;
+            this.CheckInOut.Controls.Add(this.groupBox6);
+            this.CheckInOut.Controls.Add(this.panel4);
+            this.CheckInOut.Location = new System.Drawing.Point(4, 38);
+            this.CheckInOut.Name = "CheckInOut";
+            this.CheckInOut.Padding = new System.Windows.Forms.Padding(3);
+            this.CheckInOut.Size = new System.Drawing.Size(1127, 722);
+            this.CheckInOut.TabIndex = 0;
+            this.CheckInOut.Text = "Check In/Out";
             // 
-            // PermGridView
+            // groupBox6
             // 
-            this.PermGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PermGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PermGridView.Location = new System.Drawing.Point(3, 153);
-            this.PermGridView.Name = "PermGridView";
-            this.PermGridView.RowHeadersWidth = 62;
-            this.PermGridView.RowTemplate.Height = 33;
-            this.PermGridView.Size = new System.Drawing.Size(1121, 566);
-            this.PermGridView.TabIndex = 6;
+            this.groupBox6.Controls.Add(this.rButtons10);
+            this.groupBox6.Controls.Add(this.label14);
+            this.groupBox6.Controls.Add(this.toolIDMain);
+            this.groupBox6.Controls.Add(this.rButtons8);
+            this.groupBox6.Location = new System.Drawing.Point(93, 181);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(937, 376);
+            this.groupBox6.TabIndex = 16;
+            this.groupBox6.TabStop = false;
             // 
-            // panel7
+            // rButtons10
             // 
-            this.panel7.BackColor = System.Drawing.Color.Maroon;
-            this.panel7.Controls.Add(this.TB_EMP_ID6);
-            this.panel7.Controls.Add(this.label23);
-            this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Controls.Add(this.label24);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(3, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1121, 150);
-            this.panel7.TabIndex = 5;
+            this.rButtons10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons10.BackColor = System.Drawing.Color.Green;
+            this.rButtons10.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons10.BorderRadius = 40;
+            this.rButtons10.BorderSize = 2;
+            this.rButtons10.FlatAppearance.BorderSize = 0;
+            this.rButtons10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons10.ForeColor = System.Drawing.Color.White;
+            this.rButtons10.Location = new System.Drawing.Point(565, 291);
+            this.rButtons10.Name = "rButtons10";
+            this.rButtons10.Size = new System.Drawing.Size(357, 57);
+            this.rButtons10.TabIndex = 15;
+            this.rButtons10.Text = "Check In";
+            this.rButtons10.TextColor = System.Drawing.Color.White;
+            this.rButtons10.UseVisualStyleBackColor = false;
+            this.rButtons10.Click += new System.EventHandler(this.rButtons10_Click);
             // 
-            // TB_EMP_ID6
+            // label14
             // 
-            this.TB_EMP_ID6.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID6.Name = "TB_EMP_ID6";
-            this.TB_EMP_ID6.ReadOnly = true;
-            this.TB_EMP_ID6.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID6.TabIndex = 14;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(16, 112);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(139, 40);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Tool ID";
             // 
-            // label23
+            // toolIDMain
             // 
-            this.label23.AutoSize = true;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(1082, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(39, 37);
-            this.label23.TabIndex = 13;
-            this.label23.Text = "X";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
+            this.toolIDMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.toolIDMain.BackColor = System.Drawing.Color.DarkGray;
+            this.toolIDMain.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.toolIDMain.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolIDMain.BorderSize = 5;
+            this.toolIDMain.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.toolIDMain.ForeColor = System.Drawing.Color.DimGray;
+            this.toolIDMain.Location = new System.Drawing.Point(16, 68);
+            this.toolIDMain.Margin = new System.Windows.Forms.Padding(4);
+            this.toolIDMain.Multiline = false;
+            this.toolIDMain.Name = "toolIDMain";
+            this.toolIDMain.Padding = new System.Windows.Forms.Padding(7);
+            this.toolIDMain.PasswordChar = false;
+            this.toolIDMain.Size = new System.Drawing.Size(906, 40);
+            this.toolIDMain.TabIndex = 7;
+            this.toolIDMain.UnderlinedStyle = true;
             // 
-            // pictureBox7
+            // rButtons8
             // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
-            this.pictureBox7.Location = new System.Drawing.Point(21, 25);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(171, 104);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 11;
-            this.pictureBox7.TabStop = false;
+            this.rButtons8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.rButtons8.BackColor = System.Drawing.Color.Green;
+            this.rButtons8.BackgroundColor = System.Drawing.Color.Green;
+            this.rButtons8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rButtons8.BorderRadius = 40;
+            this.rButtons8.BorderSize = 2;
+            this.rButtons8.FlatAppearance.BorderSize = 0;
+            this.rButtons8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rButtons8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rButtons8.ForeColor = System.Drawing.Color.White;
+            this.rButtons8.Location = new System.Drawing.Point(16, 291);
+            this.rButtons8.Name = "rButtons8";
+            this.rButtons8.Size = new System.Drawing.Size(357, 57);
+            this.rButtons8.TabIndex = 14;
+            this.rButtons8.Text = "Check Out";
+            this.rButtons8.TextColor = System.Drawing.Color.White;
+            this.rButtons8.UseVisualStyleBackColor = false;
+            this.rButtons8.Click += new System.EventHandler(this.rButtons8_Click);
             // 
-            // label24
+            // panel4
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(257, 25);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(564, 59);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Permissions Database";
+            this.panel4.BackColor = System.Drawing.Color.Purple;
+            this.panel4.Controls.Add(this.TB_EMP_ID1);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1121, 150);
+            this.panel4.TabIndex = 3;
             // 
-            // Tools
+            // TB_EMP_ID1
             // 
-            this.Tools.Controls.Add(this.dataGridTools);
-            this.Tools.Controls.Add(this.panel6);
-            this.Tools.Location = new System.Drawing.Point(4, 38);
-            this.Tools.Name = "Tools";
-            this.Tools.Padding = new System.Windows.Forms.Padding(3);
-            this.Tools.Size = new System.Drawing.Size(1127, 722);
-            this.Tools.TabIndex = 5;
-            this.Tools.Text = "Tools";
-            this.Tools.UseVisualStyleBackColor = true;
+            this.TB_EMP_ID1.Location = new System.Drawing.Point(891, 94);
+            this.TB_EMP_ID1.Name = "TB_EMP_ID1";
+            this.TB_EMP_ID1.ReadOnly = true;
+            this.TB_EMP_ID1.Size = new System.Drawing.Size(211, 35);
+            this.TB_EMP_ID1.TabIndex = 13;
             // 
-            // dataGridTools
+            // label15
             // 
-            this.dataGridTools.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridTools.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridTools.Location = new System.Drawing.Point(3, 153);
-            this.dataGridTools.Name = "dataGridTools";
-            this.dataGridTools.RowHeadersWidth = 62;
-            this.dataGridTools.RowTemplate.Height = 33;
-            this.dataGridTools.Size = new System.Drawing.Size(1121, 566);
-            this.dataGridTools.TabIndex = 4;
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(1082, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(39, 37);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "X";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // panel6
+            // pictureBox4
             // 
-            this.panel6.BackColor = System.Drawing.Color.Maroon;
-            this.panel6.Controls.Add(this.TB_EMP_ID7);
-            this.panel6.Controls.Add(this.label21);
-            this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Controls.Add(this.label22);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1121, 150);
-            this.panel6.TabIndex = 3;
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
+            this.pictureBox4.Location = new System.Drawing.Point(21, 25);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(171, 104);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
             // 
-            // TB_EMP_ID7
+            // label4
             // 
-            this.TB_EMP_ID7.Location = new System.Drawing.Point(891, 94);
-            this.TB_EMP_ID7.Name = "TB_EMP_ID7";
-            this.TB_EMP_ID7.ReadOnly = true;
-            this.TB_EMP_ID7.Size = new System.Drawing.Size(211, 35);
-            this.TB_EMP_ID7.TabIndex = 14;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(257, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(486, 59);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Check Tools In/Out";
             // 
-            // label21
+            // TabGroup
             // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(1082, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(39, 37);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "X";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::TMS.Properties.Resources.High_Resolution_Logo___Transparent_Background;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 25);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(171, 104);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(257, 25);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(403, 59);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Tools Database";
+            this.TabGroup.Controls.Add(this.CheckInOut);
+            this.TabGroup.Controls.Add(this.History);
+            this.TabGroup.Controls.Add(this.Manage);
+            this.TabGroup.Controls.Add(this.Employees);
+            this.TabGroup.Controls.Add(this.Permissions);
+            this.TabGroup.Controls.Add(this.Tools);
+            this.TabGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TabGroup.Location = new System.Drawing.Point(0, 0);
+            this.TabGroup.Multiline = true;
+            this.TabGroup.Name = "TabGroup";
+            this.TabGroup.SelectedIndex = 0;
+            this.TabGroup.Size = new System.Drawing.Size(1135, 764);
+            this.TabGroup.TabIndex = 0;
             // 
             // Main_Form
             // 
@@ -1438,23 +1308,21 @@
             this.Name = "Main_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.TabGroup.ResumeLayout(false);
-            this.CheckInOut.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.ToolHistory.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.UserHistory.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Tools.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.Permissions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PermGridView)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.Employees.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EmpGridView)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Manage.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -1469,99 +1337,67 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.Employees.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.EmpGridView)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.Permissions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PermGridView)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.Tools.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridTools)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.History.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.historyView)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.CheckInOut.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.TabGroup.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private TabControl TabGroup;
-        private TabPage CheckInOut;
-        private TabPage ToolHistory;
-        private TabPage UserHistory;
-        private TabPage Manage;
-        private Panel panel1;
-        private Label label1;
-        private PictureBox pictureBox1;
-        private Panel panel3;
-        private PictureBox pictureBox3;
-        private Label label3;
-        private Panel panel2;
-        private PictureBox pictureBox2;
-        private Label label2;
-        private Panel panel4;
-        private PictureBox pictureBox4;
-        private Label label4;
-        private GroupBox groupBox4;
-        private GroupBox groupBox3;
-        private GroupBox groupBox2;
-        private GroupBox groupBox1;
-        private Contols.TBox toolIDAddTB;
-        private GroupBox groupBox5;
-        private Label label8;
-        private Contols.TBox empPnumAddTB;
-        private Label label7;
-        private Contols.TBox empNameAddTB;
-        private Label label6;
-        private Label label5;
-        private Contols.TBox EmpPinAddTB;
-        private Contols.TBox empIDAddTB;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Tool_Inventory_System.RButtons rButtons2;
-        private Tool_Inventory_System.RButtons add_User;
-        private ComboBox toolTypeAddTB;
-        private Label label9;
-        private RichTextBox richTextBox1;
-        private Tool_Inventory_System.RButtons rButtons5;
-        private Label label11;
-        private Contols.TBox empRemove;
-        private Tool_Inventory_System.RButtons rButtons3;
-        private Tool_Inventory_System.RButtons rButtons4;
-        private Label label10;
+        private TabPage Tools;
+        private DataGridView dataGridTools;
+        private Panel panel6;
+        private TextBox TB_EMP_ID7;
+        private Label label21;
+        private PictureBox pictureBox6;
+        private Label label22;
+        private TabPage Permissions;
+        private DataGridView PermGridView;
+        private Panel panel7;
+        private TextBox TB_EMP_ID6;
+        private Label label23;
+        private PictureBox pictureBox7;
+        private Label label24;
+        private TabPage Employees;
+        private DataGridView EmpGridView;
+        private Panel panel5;
+        private TextBox TB_EMP_ID5;
+        private Label label20;
+        private PictureBox pictureBox5;
+        private Label label19;
+        private TabPage Manage;
+        private GroupBox groupBox4;
         private RichTextBox richTextBox2;
         private Tool_Inventory_System.RButtons rButtons6;
         private Label label12;
         private Contols.TBox toolRemove;
-        private GroupBox groupBox6;
-        private Tool_Inventory_System.RButtons rButtons8;
-        private GroupBox groupBox7;
-        private Label label13;
-        private Contols.TBox ToolIDIn;
-        private Tool_Inventory_System.RButtons rButtons9;
-        private Label label14;
-        private Contols.TBox toolIDOut;
-        private Tool_Inventory_System.RButtons rButtons10;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private TabPage Employees;
-        private DataGridView EmpGridView;
-        private Panel panel5;
-        private Label label20;
-        private PictureBox pictureBox5;
-        private Label label19;
-        private TabPage Tools;
-        private Panel panel6;
-        private Label label21;
-        private PictureBox pictureBox6;
-        private Label label22;
-        private DataGridView dataGridTools;
+        private GroupBox groupBox3;
+        private RichTextBox richTextBox1;
+        private Tool_Inventory_System.RButtons rButtons5;
+        private Label label11;
+        private Contols.TBox empRemove;
+        private GroupBox groupBox2;
+        private Tool_Inventory_System.RButtons rButtons3;
+        private Tool_Inventory_System.RButtons rButtons4;
+        private Label label10;
+        private ComboBox toolTypeAddTB;
+        private Label label9;
+        private Contols.TBox toolIDAddTB;
+        private GroupBox groupBox1;
+        private Tool_Inventory_System.RButtons rButtons2;
+        private Tool_Inventory_System.RButtons add_User;
+        private GroupBox groupBox5;
         private CheckBox RT_Tools_CB;
         private CheckBox TH_Tools_CB;
         private CheckBox UHS_Tools_CB;
@@ -1572,18 +1408,37 @@
         private CheckBox AU_Tools_CB;
         private CheckBox AT_Tools_CB;
         private CheckBox UH_Tools_CB;
-        private TabPage Permissions;
-        private DataGridView PermGridView;
-        private Panel panel7;
-        private Label label23;
-        private PictureBox pictureBox7;
-        private Label label24;
-        private TextBox TB_EMP_ID1;
-        private TextBox TB_EMP_ID2;
-        private TextBox TB_EMP_ID3;
+        private Label label8;
+        private Contols.TBox empPnumAddTB;
+        private Label label7;
+        private Contols.TBox empNameAddTB;
+        private Label label6;
+        private Label label5;
+        private Contols.TBox EmpPinAddTB;
+        private Contols.TBox empIDAddTB;
+        private Panel panel1;
         private TextBox TB_EMP_ID4;
-        private TextBox TB_EMP_ID5;
-        private TextBox TB_EMP_ID6;
-        private TextBox TB_EMP_ID7;
+        private Label label18;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private TabPage History;
+        private DataGridView historyView;
+        private Panel panel3;
+        private TextBox TB_EMP_ID2;
+        private Label label16;
+        private PictureBox pictureBox3;
+        private Label label3;
+        private TabPage CheckInOut;
+        private GroupBox groupBox6;
+        private Tool_Inventory_System.RButtons rButtons10;
+        private Label label14;
+        private Contols.TBox toolIDMain;
+        private Tool_Inventory_System.RButtons rButtons8;
+        private Panel panel4;
+        private TextBox TB_EMP_ID1;
+        private Label label15;
+        private PictureBox pictureBox4;
+        private Label label4;
+        private TabControl TabGroup;
     }
 }

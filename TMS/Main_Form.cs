@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 using System.ComponentModel.DataAnnotations.Schema;
 using TMS.Contols;
+using System.CodeDom.Compiler;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TMS
 {
@@ -25,13 +27,12 @@ namespace TMS
             String Message = "Employee ID: " + Settings.Emp_ID;
             TB_EMP_ID1.Text = Message;
             TB_EMP_ID2.Text = Message;
-            TB_EMP_ID3.Text = Message;
             TB_EMP_ID4.Text = Message;
             TB_EMP_ID5.Text = Message;
             TB_EMP_ID6.Text = Message;
             TB_EMP_ID7.Text = Message;
 
-            
+
         }
 
 
@@ -92,6 +93,26 @@ namespace TMS
                 dataGridTools.DataSource = ds.Tables[0];
                 Con.Close();
                 ClearTool();
+            }
+            catch
+            {
+            }
+        }
+        void PopHistory()
+        {
+            try
+            {
+                Con.Open();
+                string Myquery = "select * from History";
+                SqlDataAdapter da = new SqlDataAdapter(Myquery, Con);
+                SqlCommandBuilder builder = new SqlCommandBuilder(da);
+                var ds = new DataSet();
+                da.Fill(ds);
+                historyView.DataSource = ds.Tables[0];
+                Con.Close();
+                if (Settings.Debug == true)
+                    MessageBox.Show("History Updated");
+                
             }
             catch
             {
@@ -215,6 +236,56 @@ namespace TMS
             PopEmp();
             PopPerm();
             ClearEmp();
+        }
+
+        //Check Out Tool
+
+        private void rButtons8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string TXT = "Out";
+                DateTime Date = DateTime.Now;
+
+                //Add Data
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("insert into History values('" + Settings.Emp_ID + "','" + toolIDMain.Text + "', '" + Date + "','" + TXT + "')", Con);
+                if (Settings.Debug == true) MessageBox.Show("Run Query");
+                cmd.ExecuteNonQuery();
+                if (Settings.Debug == true) MessageBox.Show("Con Close");
+                Con.Close();
+
+
+                MessageBox.Show("Tool Checked " + TXT + " Successfully!");
+                //Reload History List
+                PopHistory();
+            }
+            catch
+            {
+            }
+        }
+        //Check In Tool
+        private void rButtons10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string TXT = "In";
+                DateTime Date = DateTime.Now;
+
+                //Add Data
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("insert into History values('" + Settings.Emp_ID + "','" + toolIDMain.Text + "', '" + Date + "','" + TXT + "')", Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+
+
+                MessageBox.Show("Tool Checked " + TXT + " Successfully!");
+                //Reload History List
+                PopHistory();
+            }
+            catch
+            {
+            }
         }
     }
 }

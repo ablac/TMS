@@ -17,6 +17,7 @@ namespace TMS.Contols
         //Verify User information
         public static Boolean Verify_Login = true;
         public static Boolean Verify_Permissions = true;
+        public static Boolean Debug = true;
 
         //Do not change
         public static int Emp_ID; 

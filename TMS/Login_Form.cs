@@ -107,7 +107,7 @@ namespace TMS
             con.Open();
             SqlDataReader rdr = cmd.ExecuteReader();
 
-            Permissions result;
+            Permissions result = null;
 
             if (rdr.Read())
             {
@@ -123,12 +123,8 @@ namespace TMS
                 result.Add_Tools = (string)rdr["Add_Tools"];
                 result.Remove_Users = (string)rdr["Remove_Users"];
                 result.Remove_Tools = (string)rdr["Remove_Tools"];
-                return result;
             }
-            else
-            {
-                return null;
-            }
+            return result;
         }
     }
 }
